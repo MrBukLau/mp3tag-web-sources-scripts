@@ -201,8 +201,7 @@ If "albums"
 							json_select "kind"
 							If "song"
 								OutputTo "ITUNESMEDIATYPE"
-								Replace "song" "Normal"
-								Say "|"
+								Say "Normal"
 							EndIf
 						EndIf
 						SayRest
