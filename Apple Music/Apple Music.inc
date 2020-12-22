@@ -207,6 +207,16 @@ If "albums"
 							Say "0"
 						EndIf
 						Say "|"
+						json_select "playParams"
+						IfNot ""
+							json_select "kind"
+							If "song"
+								OutputTo "ITUNESMEDIATYPE"
+								Replace "song" "Normal"
+								SayRest
+							EndIf
+						EndIf
+						Say "|"
 					json_unselect_object
 				EndIf
 			json_foreach_end
