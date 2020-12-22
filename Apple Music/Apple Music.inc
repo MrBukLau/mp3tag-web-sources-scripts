@@ -207,7 +207,7 @@ If "albums"
 							Say "0"
 						EndIf
 						Say "|"
-						json_select "playParams"
+						json_select "playParams" 2
 						IfNot ""
 							json_select "kind"
 							If "song"
