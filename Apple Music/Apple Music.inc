@@ -202,9 +202,11 @@ If "albums"
 							If "song"
 								OutputTo "ITUNESMEDIATYPE"
 								Say "Normal"
+								Say "|"
 							EndIf
 						EndIf
 						SayRest
+						Say "|"
 						json_select "contentRating"
 						OutputTo "ITUNESADVISORY"
 						IfNot ""
