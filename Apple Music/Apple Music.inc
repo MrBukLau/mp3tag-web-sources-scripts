@@ -213,7 +213,7 @@ If "albums"
 							If "song"
 								OutputTo "ITUNESMEDIATYPE"
 								Replace "song" "Normal"
-								SayRest
+								Say "|"
 							EndIf
 						EndIf
 						Say "|"
