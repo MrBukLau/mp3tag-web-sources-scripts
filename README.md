@@ -12,7 +12,7 @@ The web sources scripts in this repository include some modifications that were 
 ## Additional Information
 * For help with using web sources scripts in Mp3tag, click on this [link](https://github.com/jonaaa20/itunes-web-sources)
 * To find more web sources scripts for Mp3tag, click on this [link](https://community.mp3tag.de/c/development/web-sources-scripts/12)
-* To view the original web sources scripts, [click here for Apple Music](https://community.mp3tag.de/t/ws-apple-music/51184/2) and [click here for the iTunes Store](https://community.mp3tag.de/t/ws-itunes/13478)
+* To view the original web sources scripts, [click here for Apple Music](https://community.mp3tag.de/t/ws-apple-music/51184) and [click here for the iTunes Store](https://community.mp3tag.de/t/ws-itunes/13478)
 
 ## License
 [MIT](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE)
