@@ -3,9 +3,9 @@
 ##################################################################################################
 
 ##################################################################################################
-#                                  FORMAT FOR ITUNES SEARCH API                                  #
+#                                        ITUNES STORE API                                        #
 ##################################################################################################
-[Name]=iTunes
+[Name]=iTunes Store
 [BasedOn]=https://itunes.apple.com/
 [WordSeparator]=%20
 [IndexFormat]=%_preview%|%_url%|%Artist%|%Album%|%Explicitness%|%Year%|%Tracks%|%Copyright%
