@@ -196,16 +196,6 @@ If "albums"
 						OutputTo "COMPOSER"
 						SayRest
 						Say "|"
-						json_select "playParams"
-						If "kind"
-							json_select "kind"
-							If "song"
-								OutputTo "ITUNESMEDIATYPE"
-								Replace "kind" "Normal"
-								SayRest
-							EndIf
-						EndIf
-						Say "|"
 						json_select "contentRating"
 						OutputTo "ITUNESADVISORY"
 						IfNot ""
@@ -217,6 +207,15 @@ If "albums"
 							Say "0"
 						EndIf
 						Say "|"
+						json_select "playParams"
+						If "kind"
+							json_select "kind"
+							If "song"
+								Say "Normal"
+								OutputTo "ITUNESMEDIATYPE"
+								Say "|"
+							EndIf
+						EndIf
 					json_unselect_object
 				EndIf
 			json_foreach_end
