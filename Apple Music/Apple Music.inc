@@ -1,7 +1,8 @@
 # Apple Music Web Sources Script for Mp3tag
 [Name]=Apple Music
 [BasedOn]=https://itunes.apple.com/
-[WordSeparator]=%20
+[AlbumUrl]=
+[WordSeparator]=+
 [IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Copyright%|%Store%|%Year%|%Genre%
 [Encoding]=url-utf-8
 
