@@ -106,9 +106,6 @@ json_select "mp3tagalbum"
 json_select_array "d" 1
 json_select "type"
 If "albums"
-	json_select "id"
-	OutputTo "plID"
-	SayRest
 	json_select_object "attributes"
 
 		json_select_object "artwork"
