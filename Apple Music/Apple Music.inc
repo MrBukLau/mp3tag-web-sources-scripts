@@ -208,30 +208,8 @@ If "albums"
 						Say "|"
 
 					json_unselect_object
-					json_select_object "relationships"
-
-						json_select_object "composers"
-							json_select_many "data" "id" ", "
-							OutputTo "cmID"
-							IfNot ""
-								SayRest
-							EndIf
-							Say "|"
-						json_unselect_object
-
-						json_select_object "artists"
-							json_select_many "data" "id" ", "
-							OutputTo "atID"
-							IfNot ""
-								SayRest
-							EndIf
-							Say "|"
-						json_unselect_object
-
-					json_unselect_object
 				EndIf
 			json_foreach_end
 		json_unselect_object
 	json_unselect_object
 EndIf
-
