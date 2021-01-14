@@ -1,4 +1,4 @@
-# iTunes API/Apple Music parser for MP3Tag v3
+# Apple Music Web Sources Script for Mp3tag
 [Name]=Apple Music
 [BasedOn]=https://itunes.apple.com/
 [AlbumUrl]=
