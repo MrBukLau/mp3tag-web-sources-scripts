@@ -142,19 +142,11 @@ IfNot "0"
 
 		OutputTo "ALBUMARTIST"
 		json_select "artistName"
-		If "Various Artists"
-			OutputTo "COMPILATION"
-			Say "1"
-		Else
-			OutputTo "COMPILATION"
-			Say "0"
-		EndIf
+		SayRest
 
 		OutputTo "ALBUM"
-		json_select "collectionName"
-		If ""
-			json_select "collectionCensoredName"
-		EndIf
+		json_select "collectionCensoredName"
+		SayRest
 
 		OutputTo "COVERURL"
 		json_select "artworkUrl100"
@@ -163,6 +155,16 @@ IfNot "0"
 
 		OutputTo "COPYRIGHT"
 		json_select "copyright"
+		SayRest
+
+		json_select "artistName"
+		If "Various Artists"
+			OutputTo "COMPILATION"
+			Say "1"
+		Else
+			OutputTo "COMPILATION"
+			Say "0"
+		EndIf
 		SayRest
 
 	EndIf
@@ -186,9 +188,7 @@ IfNot "0"
 
 		OutputTo "TRACKS"
 		json_select "trackCensoredName"
-		If ""
-			json_select "trackName"
-		EndIf
+		SayRest
 		Say "|"
 
 		OutputTo "ITUNESADVISORY"
