@@ -277,17 +277,8 @@ If "albums"
 					json_unselect_object
 					json_select_object "relationships"
 
-						json_select_object "composers"
-							json_select_many "data" "id" ", "
-							OutputTo "ITUNESCOMPOSERID"
-							IfNot ""
-								SayRest
-							EndIf
-							Say "|"
-						json_unselect_object
-
 						json_select_object "artists"
-							json_select_many "data" "id" ", "
+							json_select_many "data" "id" ", " 1
 							OutputTo "ITUNESARTISTID"
 							IfNot ""
 								SayRest
