@@ -240,84 +240,69 @@ IfNot "0"
 		Say "143441"
 		Say "|"
 
+		OutputTo "ITUNESGENREID"
 		json_select "primaryGenreName"
 		If "Country"
-			OutputTo "ITUNESGENREID"
 			Say "6"
 			Say "|"
 		EndIf
 		If "Electronic"
-			OutputTo "ITUNESGENREID"
 			Say "7"
 			Say "|"
 		EndIf
 		If "Electronica"
-			OutputTo "ITUNESGENREID"
 			Say "1058"
 			Say "|"
 		EndIf
 		If "Singer/Songwriter"
-			OutputTo "ITUNESGENREID"
 			Say "10"
 			Say "|"
 		EndIf
 		If "Pop"
-			OutputTo "ITUNESGENREID"
 			Say "14"
 			Say "|"
 		EndIf
 		If "R&B/Soul"
-			OutputTo "ITUNESGENREID"
 			Say "15"
 			Say "|"
 		EndIf
 		If "Soundtrack"
-			OutputTo "ITUNESGENREID"
 			Say "16"
 			Say "|"
 		EndIf
 		If "Dance"
-			OutputTo "ITUNESGENREID"
 			Say "17"
 			Say "|"
 		EndIf
 		If "House"
-			OutputTo "ITUNESGENREID"
 			Say "1048"
 			Say "|"
 		EndIf
 		If "Hip-Hop/Rap"
-			OutputTo "ITUNESGENREID"
 			Say "18"
 			Say "|"
 		EndIf
 		If "Worldwide"
-			OutputTo "ITUNESGENREID"
 			Say "19"
 			Say "|"
 		EndIf
 		If "Alternative"
-			OutputTo "ITUNESGENREID"
 			Say "20"
 			Say "|"
 		EndIf
 		If "Rock"
-			OutputTo "ITUNESGENREID"
 			Say "21"
 			Say "|"
 		EndIf
 		If "J-Pop"
-			OutputTo "ITUNESGENREID"
 			Say "27"
 			Say "|"
 		EndIf
 		If "Anime"
-			OutputTo "ITUNESGENREID"
 			Say "29"
 			Say "|"
 		EndIf
 		If "K-Pop"
-			OutputTo "ITUNESGENREID"
 			Say "51"
 			Say "|"
 		EndIf
