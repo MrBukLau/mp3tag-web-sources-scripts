@@ -188,6 +188,13 @@ If "albums"
 
 		json_select "artistName"
 		OutputTo "ALBUMARTIST"
+		If "Various Artists"
+			OutputTo "COMPILATION"
+			Say "1"
+		Else
+			OutputTo "COMPILATION"
+			Say "0"
+		EndIf
 		SayRest
 
 		json_select "name"
@@ -196,10 +203,6 @@ If "albums"
 
 		json_select "copyright"
 		OutputTo "COPYRIGHT"
-		SayRest
-
-		json_select "isCompilation"
-		OutputTo "COMPILATION"
 		SayRest
 
 	json_unselect_object
