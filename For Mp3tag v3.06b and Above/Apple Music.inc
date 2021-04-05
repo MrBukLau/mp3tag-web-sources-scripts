@@ -292,11 +292,14 @@ If "albums"
 					json_unselect_object
 					json_select_object "relationships"
 
-						json_select_many "data" "id" ", "
-						OutputTo "ITUNESARTISTID"
-						IfNot ""
-							SayRest
-						EndIf
+						json_select_object "artists"
+							json_select_many "data" "id" ", "
+							OutputTo "ITUNESARTISTID"
+							SayUntil ", "
+							IfNot ""
+								SayRest
+							EndIf
+						json_unselect_object
 
 					json_unselect_object
 				EndIf
