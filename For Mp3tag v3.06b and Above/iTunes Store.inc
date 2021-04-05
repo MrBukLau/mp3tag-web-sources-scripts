@@ -157,15 +157,13 @@ IfNot "0"
 		json_select "copyright"
 		SayRest
 
+		OutputTo "COMPILATION"
 		json_select "artistName"
 		If "Various Artists"
-			OutputTo "COMPILATION"
 			Say "1"
 		Else
-			OutputTo "COMPILATION"
 			Say "0"
 		EndIf
-		SayRest
 
 	EndIf
 	json_select "kind"
