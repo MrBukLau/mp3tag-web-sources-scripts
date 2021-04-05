@@ -289,20 +289,12 @@ If "albums"
 						Say "143441"
 						Say "|"
 
-					json_unselect_object
-					json_select_object "relationships"
-
-						json_select_object "artists"
-							json_select_object "data"
-							json_select_array "id" 1
-							OutputTo "ITUNESARTISTID"
-							SayRest
-							Say "|"
-							IfNot ""
-								SayRest
+						json_select_array "genreNames" 1
+							If "Hip-Hop/Rap"
+								OutputTo "ITUNESGENREID"
+								Say "18"
+								Say "|"
 							EndIf
-							json_unselect_object
-						json_unselect_object
 
 					json_unselect_object
 				EndIf
