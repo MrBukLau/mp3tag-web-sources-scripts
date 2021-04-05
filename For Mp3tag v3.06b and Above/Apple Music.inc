@@ -285,7 +285,6 @@ If "albums"
 								json_unselect_object
 							EndIf
 						
-						# Change 143441 (United States) if you want a different country
 						OutputTo "ITUNESCOUNTRYID"
 						Say "143441"
 						Say "|"
@@ -295,10 +294,12 @@ If "albums"
 
 						json_select_object "artists"
 							json_select_object "data"
+								json_select_object "id"
 								json_select_array "id" 1
 								OutputTo "ITUNESARTISTID"
 								SayRest
 								Say "|"
+								json_unselect_object
 							json_unselect_object
 							IfNot ""
 								SayRest
