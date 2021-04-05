@@ -289,10 +289,11 @@ If "albums"
 					json_select_object "relationships"
 
 						json_select_object "artists"
-							json_select_array "data"
+							json_select "data"
 								json_select_array "id" 1
 								OutputTo "ITUNESARTISTID"
 								SayRest
+								Say "|"
 							IfNot ""
 								SayRest
 							EndIf
