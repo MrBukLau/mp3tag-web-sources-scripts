@@ -191,9 +191,11 @@ If "albums"
 		If "Various Artists"
 			OutputTo "COMPILATION"
 			Say "1"
+			Say "|"
 		Else
 			OutputTo "COMPILATION"
 			Say "0"
+			Say "|"
 		EndIf
 		SayRest
 
