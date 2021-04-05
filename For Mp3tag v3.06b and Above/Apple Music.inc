@@ -171,16 +171,16 @@ json_select_array "d" 1
 json_select "type"
 If "albums"
 	json_select "id"
-	OutputTo "plID"
+	OutputTo "ITUNESALBUMID"
 	SayRest
 	json_select_object "attributes"
 
 		json_select_object "artwork"
 			json_select "url"
 			IfNot ""
-				Replace "{w}" "10000"
-				Replace "{h}" "10000"
-				Replace "{f}" "jpg"
+				Replace "{w}" "2000"
+				Replace "{h}" "2000"
+				Replace "{f}" "jpeg"
 				OutputTo "COVERURL"
 				SayRest
 			EndIf
@@ -190,65 +190,17 @@ If "albums"
 		OutputTo "ALBUMARTIST"
 		SayRest
 
-		json_select "isSingle"
-		OutputTo "SINGLE"
-		SayRest
-
-		json_select_array "genreNames" -1 ", "
-		OutputTo "AMGENRES"
-		SayRest
-
-		json_select "trackCount"
-		OutputTo "TOTALTRACKS"
-		SayNextNumber
-
-		json_select "releaseDate"
-		OutputTo "YEAR"
-		SayRest
-
 		json_select "name"
 		OutputTo "ALBUM"
-		SayRest
-
-		json_select "recordLabel"
-		OutputTo "LABEL"
 		SayRest
 
 		json_select "copyright"
 		OutputTo "COPYRIGHT"
 		SayRest
 
-		json_select_object "playParams"
-			IfNot ""
-				json_select "id"
-				OutputTo "plID2"
-				SayNextNumber
-				json_unselect_object
-			EndIf
-
-		json_select_object "editorialNotes"
-			IfNot ""
-			json_select "short"
-			OutputTo "COMMENT"
-			SayRest
-			json_select "standard"
-			OutputTo "DESCRIPTION"
-			SayRest
-			json_unselect_object
-			EndIf
-
 		json_select "isCompilation"
 		OutputTo "COMPILATION"
 		SayRest
-
-		json_select "contentRating"
-		IfNot ""
-			Replace "notExplicit" "0"
-			Replace "explicit" "1"
-			Replace "cleaned" "2"
-			OutputTo "ALBUMADVISORY"
-			SayRest
-		EndIf
 
 	json_unselect_object
 
@@ -280,18 +232,13 @@ If "albums"
 						SayRest
 						Say "|"
 
-						json_select_array "genreNames" -1 ", "
-						OutputTo "GENRES"
-						SayRest
-						Say "|"
-
 						json_select "durationInMillis"
 						OutputTo "_LENGTH"
 						SayNextNumber
 						Say "|"
 
 						json_select "releaseDate"
-						OutputTo "TRACKYEAR"
+						OutputTo "YEAR"
 						SayRest
 						Say "|"
 
@@ -301,12 +248,7 @@ If "albums"
 						Say "|"
 
 						json_select "isrc"
-						OutputTo "ISRC"
-						SayRest
-						Say "|"
-
-						json_select "hasLyrics"
-						OutputTo "AMLYRICS"
+						OutputTo "XID"
 						SayRest
 						Say "|"
 
@@ -315,41 +257,8 @@ If "albums"
 						SayNextNumber
 						Say "|"
 
-						json_select "audioLocale"
-						OutputTo "LANGUAGE"
-						SayRest
-						Say "|"
-
-						json_select "workName"
-						IfNot ""
-							OutputTo "SHOWMOVEMENT"
-							Say "1"
-							Say "|"
-							OutputTo "WORK"
-							SayRest
-							Say "|"
-							OutputTo "MOVEMENTNAME"
-							json_select "name"
-							FindInLine ": " 1 1
-							SayRest
-							Say "|"
-						Else
-							OutputTo "SHOWMOVEMENT"
-							Say "0"
-							Say "|"
-							OutputTo "WORK"
-							Say "|"
-							OutputTo "MOVEMENTNAME"
-							Say "|"
-						EndIf
-
 						json_select "composerName"
 						OutputTo "COMPOSER"
-						SayRest
-						Say "|"
-
-						json_select "attribution"
-						OutputTo "ATTRIBUTION"
 						SayRest
 						Say "|"
 
@@ -370,7 +279,7 @@ If "albums"
 
 						json_select_object "composers"
 							json_select_many "data" "id" ", "
-							OutputTo "cmID"
+							OutputTo "ITUNESCOMPOSERID"
 							IfNot ""
 								SayRest
 							EndIf
@@ -379,7 +288,7 @@ If "albums"
 
 						json_select_object "artists"
 							json_select_many "data" "id" ", "
-							OutputTo "atID"
+							OutputTo "ITUNESARTISTID"
 							IfNot ""
 								SayRest
 							EndIf
@@ -392,4 +301,3 @@ If "albums"
 		json_unselect_object
 	json_unselect_object
 EndIf
-
