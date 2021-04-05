@@ -1,6 +1,6 @@
 # Apple Music Web Sources Script for Mp3tag v3.06b and Above
 [Name]=Apple Music
-[BasedOn]=https://itunes.apple.com/
+[BasedOn]=https://music.apple.com/
 [AlbumUrl]=
 [WordSeparator]=+
 [IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Collection ID%|%Copyright%|%Store%|%Year%|%Genre%
@@ -294,12 +294,10 @@ If "albums"
 
 						json_select_object "artists"
 							json_select_object "data"
-								If "id"
-									json_select_array "id" 1
-									OutputTo "ITUNESARTISTID"
-									SayRest
-									Say "|"
-								EndIf
+							json_select_array "id" 1
+							OutputTo "ITUNESARTISTID"
+							SayRest
+							Say "|"
 							IfNot ""
 								SayRest
 							EndIf
