@@ -293,15 +293,17 @@ If "albums"
 					json_select_object "relationships"
 
 						json_select_object "artists"
-							json_select_array "data"
+							json_select_object "data"
 								If "id"
-									json_select "id"
+									json_select_array "id" 1
 									OutputTo "ITUNESARTISTID"
-									SayUntil ", "
+									SayRest
+									Say "|"
 								EndIf
 							IfNot ""
 								SayRest
 							EndIf
+							json_unselect_object
 						json_unselect_object
 
 					json_unselect_object
