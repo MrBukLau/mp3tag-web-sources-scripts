@@ -285,6 +285,7 @@ If "albums"
 								json_unselect_object
 							EndIf
 						
+						# Change 143441 (United States) if you want a different country
 						OutputTo "ITUNESCOUNTRYID"
 						Say "143441"
 						Say "|"
