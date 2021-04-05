@@ -273,6 +273,16 @@ If "albums"
 							Say "0"
 						EndIf
 						Say "|"
+						
+						json_select "playParams"
+							IfNot ""
+								json_select "kind"
+									If "song"
+										OutputTo "ITUNESMEDIATYPE"
+										Say "Normal"
+										Say "|"
+									EndIf
+							EndIf
 
 					json_unselect_object
 					json_select_object "relationships"
@@ -280,8 +290,6 @@ If "albums"
 						json_select_object "artists"
 							json_select_many "data" "id" ", "
 							OutputTo "ITUNESARTISTID"
-							If ", "
-								SayRest
 							IfNot ""
 								SayRest
 							EndIf
