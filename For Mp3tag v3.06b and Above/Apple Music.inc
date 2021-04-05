@@ -274,7 +274,7 @@ If "albums"
 						EndIf
 						Say "|"
 						
-						json_select "playParams"
+						json_select_object "playParams"
 							IfNot ""
 								json_select "kind"
 									If "song"
@@ -282,6 +282,7 @@ If "albums"
 										Say "Normal"
 										Say "|"
 									EndIf
+								json_unselect_object
 							EndIf
 
 					json_unselect_object
