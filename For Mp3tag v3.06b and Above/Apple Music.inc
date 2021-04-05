@@ -284,16 +284,21 @@ If "albums"
 									EndIf
 								json_unselect_object
 							EndIf
-
+						
+						OutputTo "ITUNESCOUNTRYID"
+						Say "143441"
+						Say "|"
+						
 					json_unselect_object
 					json_select_object "relationships"
 
 						json_select_object "artists"
-							json_select "data"
+							json_select_object "data"
 								json_select_array "id" 1
 								OutputTo "ITUNESARTISTID"
 								SayRest
 								Say "|"
+							json_unselect_object
 							IfNot ""
 								SayRest
 							EndIf
