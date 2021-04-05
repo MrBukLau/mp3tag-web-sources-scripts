@@ -293,9 +293,12 @@ If "albums"
 					json_select_object "relationships"
 
 						json_select_object "artists"
-							json_select_many "data" "id" ", "
-							OutputTo "ITUNESARTISTID"
-							SayUntil ", "
+							json_select_array "data"
+								If "id"
+									json_select "id"
+									OutputTo "ITUNESARTISTID"
+									SayUntil ", "
+								EndIf
 							IfNot ""
 								SayRest
 							EndIf
