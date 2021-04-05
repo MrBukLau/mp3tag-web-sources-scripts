@@ -293,7 +293,7 @@ If "albums"
 					json_select_object "relationships"
 
 						json_select_many "data" "id" ", "
-						OutputTo "ITUNESARTISTID"					OutputTo "ITUNESARTISTID"
+						OutputTo "ITUNESARTISTID"
 						IfNot ""
 							SayRest
 						EndIf
