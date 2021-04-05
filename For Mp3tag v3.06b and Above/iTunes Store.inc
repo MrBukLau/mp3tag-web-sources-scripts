@@ -233,6 +233,14 @@ IfNot "0"
 
 		OutputTo "GENRE"
 		json_select "primaryGenreName"
+		SayRest
+		Say "|"
+
+		OutputTo "ITUNESCOUNTRYID"
+		Say "143441"
+		Say "|"
+
+		json_select "primaryGenreName"
 		If "Country"
 			OutputTo "ITUNESGENREID"
 			Say "6"
@@ -313,8 +321,6 @@ IfNot "0"
 			Say "51"
 			Say "|"
 		EndIf
-		SayRest
-		Say "|"
 
 	EndIf
 	json_foreach_end
