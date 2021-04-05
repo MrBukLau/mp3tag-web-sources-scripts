@@ -1,6 +1,6 @@
-# iTunes API parser for MP3Tag v3
-[Name]=iTunes
-[BasedOn]=https://itunes.apple.com/
+# iTunes Store Web Sources Script for Mp3tag v3.06b and Above
+[Name]=iTunes Store
+[BasedOn]=https://music.apple.com/
 [WordSeparator]=+
 [IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Copyright%|%Store%|%Year%|%Genre%
 [Encoding]=url-utf-8
@@ -136,43 +136,15 @@ IfNot "0"
 	json_select "collectionType"
 	If "Album"
 
-		OutputTo "ALBUMARTISTID"
-		json_select "artistId"
-		SayNextNumber
-
-		OutputTo "plID"
+		OutputTo "ITUNESALBUMID"
 		json_select "collectionId"
-		SayNextNumber
-
-		OutputTo "AMGARTISTID"
-		json_select "amgArtistId"
 		SayNextNumber
 
 		OutputTo "ALBUMARTIST"
 		json_select "artistName"
-		Replace "Various Artists" ""
-		Replace "Varios Artistas" ""
-		Replace "Vários Artistas" ""
-		Replace "群星" ""
-		Replace "Eri Esittäjiä" ""
-		Replace "Multi-interprètes" ""
-		Replace "Verschiedene Interpreten" ""
-		Replace "Artisti Vari" ""
-		Replace "ヴァリアス・アーティスト" ""
-		Replace "Diverse Artister" ""
-		Replace "Разные артисты" ""
-		Replace "Blandade Artister" ""
-		Replace "Çeşitli Sanatçılar" ""
-		Replace "مختلف الفنانين" ""
-		Replace "فنانون متنوعون" ""
-		Replace "فنانون متعددون" ""
-		Replace "Різні виконавці" ""
-		Replace "Nhiều Nghệ Sĩ" ""
-		If ""
+		If "Various Artists"
 			OutputTo "COMPILATION"
 			Say "1"
-			OutputTo "ALBUMARTIST"
-			Say ""
 		Else
 			SayRest
 		EndIf
@@ -182,53 +154,21 @@ IfNot "0"
 		If ""
 			json_select "collectionCensoredName"
 		EndIf
-		Replace "[" "("
-		Replace "]" ")"
-		SayUntil "(Remastered)"
-		IfNot ""
-			OutputTo "REMASTEREDALBUM"
-			Say "1"
-		EndIf
 
 		OutputTo "COVERURL"
 		json_select "artworkUrl100"
-		Replace "100x100bb" "10000x10000bb"
+		Replace "100x100bb" "2000x2000bb"
 		SayRest
-
-		OutputTo "ALBUMADVISORY"
-		json_select "collectionExplicitness"
-		Replace "cleaned" "2"
-		Replace "explicit" "1"
-		Replace "notExplicit" "0"
-		SayRest
-		Say "|"
-
-		OutputTo "CONTENTADVISORY"
-		json_select "contentAdvisoryRating"
-		SayRest
-		Say "|"
-
-		OutputTo "ALBUMTRACKS"
-		json_select "trackCount"
-		SayNextNumber
 
 		OutputTo "COPYRIGHT"
 		json_select "copyright"
-		SayRest
-
-		OutputTo "YEAR"
-		json_select "releaseDate"
-		SayRest
-
-		OutputTo "ALBUMGENRE"
-		json_select "primaryGenreName"
 		SayRest
 
 	EndIf
 	json_select "kind"
 	If "song"
 
-		OutputTo "atID"
+		OutputTo "ITUNESARTISTID"
 		json_select "artistId"
 		SayNextNumber
 		Say "|"
@@ -243,34 +183,18 @@ IfNot "0"
 		SayRest
 		Say "|"
 
-		OutputTo "COLLECTIONNAME"
-		json_select "collectionName"
-		If ""
-			json_select "collectionCensoredName"
-		EndIf
-		SayRest
-		Say "|"
-
 		OutputTo "TRACKS"
 		json_select "trackCensoredName"
 		If ""
 			json_select "trackName"
 		EndIf
-		Replace "[" "("
-		Replace "]" ")"
-		SayUntil "(Remastered)"
-		Say "|"
-		OutputTo "REMASTERED"
-		IfNot ""
-			Say "1"
-		EndIf
 		Say "|"
 
 		OutputTo "ITUNESADVISORY"
 		json_select "trackExplicitness"
-		Replace "cleaned" "2"
-		Replace "explicit" "1"
 		Replace "notExplicit" "0"
+		Replace "explicit" "1"
+		Replace "cleaned" "2"
 		SayRest
 		Say "|"
 
@@ -278,7 +202,7 @@ IfNot "0"
 		Say "Normal"
 		Say "|"
 
-		OutputTo "TRACKYEAR"
+		OutputTo "YEAR"
 		json_select "releaseDate"
 		SayRest		
 		Say "|"
@@ -310,17 +234,86 @@ IfNot "0"
 
 		OutputTo "GENRE"
 		json_select "primaryGenreName"
-		SayRest
-		Say "|"
-
-		OutputTo "WORK"
-		json_select "trackName"
-		SayUntil ": "
-		Say "|"
-
-		OutputTo "MOVEMENTNAME"
-		json_select "trackName"
-		FindInLine ": " 1 1
+		If "Country"
+			OutputTo "ITUNESGENREID"
+			Say "6"
+			Say "|"
+		EndIf
+		If "Electronic"
+			OutputTo "ITUNESGENREID"
+			Say "7"
+			Say "|"
+		EndIf
+		If "Electronica"
+			OutputTo "ITUNESGENREID"
+			Say "1058"
+			Say "|"
+		EndIf
+		If "Singer/Songwriter"
+			OutputTo "ITUNESGENREID"
+			Say "10"
+			Say "|"
+		EndIf
+		If "Pop"
+			OutputTo "ITUNESGENREID"
+			Say "14"
+			Say "|"
+		EndIf
+		If "R&B/Soul"
+			OutputTo "ITUNESGENREID"
+			Say "15"
+			Say "|"
+		EndIf
+		If "Soundtrack"
+			OutputTo "ITUNESGENREID"
+			Say "16"
+			Say "|"
+		EndIf
+		If "Dance"
+			OutputTo "ITUNESGENREID"
+			Say "17"
+			Say "|"
+		EndIf
+		If "House"
+			OutputTo "ITUNESGENREID"
+			Say "1048"
+			Say "|"
+		EndIf
+		If "Hip-Hop/Rap"
+			OutputTo "ITUNESGENREID"
+			Say "18"
+			Say "|"
+		EndIf
+		If "Worldwide"
+			OutputTo "ITUNESGENREID"
+			Say "19"
+			Say "|"
+		EndIf
+		If "Alternative"
+			OutputTo "ITUNESGENREID"
+			Say "20"
+			Say "|"
+		EndIf
+		If "Rock"
+			OutputTo "ITUNESGENREID"
+			Say "21"
+			Say "|"
+		EndIf
+		If "J-Pop"
+			OutputTo "ITUNESGENREID"
+			Say "27"
+			Say "|"
+		EndIf
+		If "Anime"
+			OutputTo "ITUNESGENREID"
+			Say "29"
+			Say "|"
+		EndIf
+		If "K-Pop"
+			OutputTo "ITUNESGENREID"
+			Say "51"
+			Say "|"
+		EndIf
 		SayRest
 		Say "|"
 
