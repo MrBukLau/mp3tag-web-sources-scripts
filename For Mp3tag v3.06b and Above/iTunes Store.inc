@@ -146,7 +146,8 @@ IfNot "0"
 			OutputTo "COMPILATION"
 			Say "1"
 		Else
-			SayRest
+			OutputTo "COMPILATION"
+			Say "0"
 		EndIf
 
 		OutputTo "ALBUM"
