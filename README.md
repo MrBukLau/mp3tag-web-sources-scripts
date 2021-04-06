@@ -5,9 +5,9 @@
 * [Description](https://github.com/MrBukLau/mp3tag-web-sources-scripts#description)
 * [Instructions on Adding Web Sources Scripts to Mp3tag](https://github.com/MrBukLau/mp3tag-web-sources-scripts#instructions-on-adding-web-sources-scripts-to-mp3tag)
 * [Questions About the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts#questions-about-the-web-sources-scripts)
-  * [How to change the web sources scripts to a different country?]()
-  * [How to change the purchasing country?]()
-  * [How to get a genre ID that is not listed in the web sources scripts?]()
+  * [How to change the web sources scripts to a different country?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-to-change-the-web-sources-scripts-to-a-different-country)
+  * [How to change the purchasing country?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-to-change-the-purchasing-country)
+  * [How to get a genre ID that is not listed in the web sources scripts?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-to-get-a-genre-id-that-is-not-listed-in-the-web-sources-scripts)
 * [Additional Information](https://github.com/MrBukLau/mp3tag-web-sources-scripts#additional-information)
 * [License](https://github.com/MrBukLau/mp3tag-web-sources-scripts#license)
 
