@@ -50,7 +50,7 @@ Say "|"
 A: Some of the most common genre IDs are already accounted for in these web sources scripts. However, if there is a genre ID that is not listed in web sources scripts, you can add that genre ID in the .inc file by searching for the line that says "ITUNESGENREID" and following the same format as the other genre IDs. To find more genre IDs, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Genre%20IDs.csv).
 
 #### Q: How do I get music metadata from a different country of Apple Music or iTunes Store?
-A: You will have to go to the .src file and change the country code in it. To find country codes, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) or this [link](https://gist.github.com/daFish/5990634).
+A: You will have to go to the .src file and change the country code in it. To find country codes, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) or this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes.md).
 
 *Example Using Germany as the Country Code:* <br>
 ```
