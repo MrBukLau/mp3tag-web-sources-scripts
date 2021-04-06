@@ -1,4 +1,4 @@
-[IndexUrl]=https://itunes.apple.com/search?country=au&lang=en_us&entity=album&term=%s
-[AlbumUrl]=https://itunes.apple.com/lookup?country=au&lang=en_us&entity=song&limit=200&id=
+[IndexUrl]=https://music.apple.com/search?country=au&lang=en_us&entity=album&term=%s
+[AlbumUrl]=https://music.apple.com/lookup?country=au&lang=en_us&entity=song&limit=200&id=
 [SearchBy]=URL||||&term=%s
 [Include]=iTunes Store.inc
