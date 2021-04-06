@@ -98,9 +98,6 @@ RegexpReplace "storefronts\.(.*?)\"" "storefronts\""
 
 json "on" "current"
 
-debug "on" "C:\debug-album.txt"
-DebugWriteInput "C:\debug-album-in.txt"
-
 json_unselect_object
 json_select "mp3tagalbum"
 json_select_array "d" 1
