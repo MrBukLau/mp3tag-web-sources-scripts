@@ -7,9 +7,6 @@
 
 [ParserScriptIndex]=...
 
-# debug "on" "C:\debug-index.txt"
-# DebugWriteInput "C:\debug-index-in.txt"
-
 json "on"
 
 json_select "resultCount"
@@ -124,9 +121,6 @@ IfNot "0"
 EndIf
 
 [ParserScriptAlbum]=...
-
-# debug "on" "C:\debug-album.txt"
-# DebugWriteInput "C:\debug-album-in.txt"
 
 json "on"
 
