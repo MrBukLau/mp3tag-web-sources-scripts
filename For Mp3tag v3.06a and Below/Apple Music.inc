@@ -1,6 +1,6 @@
-# Apple Music Web Sources Script for Mp3tag
+# Apple Music Web Sources Script for Mp3tag v3.06a and Below
 [Name]=Apple Music
-[BasedOn]=https://itunes.apple.com/
+[BasedOn]=https://music.apple.com/
 [AlbumUrl]=
 [WordSeparator]=+
 [IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Copyright%|%Store%|%Year%|%Genre%
@@ -129,10 +129,6 @@ If "albums"
 
 		json_select "copyright"
 		OutputTo "COPYRIGHT"
-		SayRest
-
-		json_select "isCompilation"
-		OutputTo "COMPILATION"
 		SayRest
 
 	json_unselect_object
