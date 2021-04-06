@@ -8,9 +8,11 @@
  <a href="https://www.mp3tag.de/en/index.html"><img src="https://img.shields.io/badge/Program-Mp3tag-orange.svg"></a>
 </h1>
 
-<h4 align="center">
+<p align="center">
+ <b>
  IMPORTANT NOTICE: You need to download Mp3tag v3.06b or above for the new iTunes tags to work properly.
-</h4>
+ </b>
+</p>
 
 ## Table of Contents
 * [Description](https://github.com/MrBukLau/mp3tag-web-sources-scripts#description)
