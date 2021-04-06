@@ -1,5 +1,23 @@
-# Mp3tag Web Sources Scripts <br> [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE)
-**IMPORTANT NOTICE:** You need to download Mp3tag v3.06b or above for the new iTunes tags to work properly.
+<h1 align="center">
+ <br>
+ <img src="https://www.mp3tag.de/images/logo.png">
+ <br>
+ Mp3tag Web Sources Scripts
+ <br>
+</h1>
+
+<h4 align="center">
+ Additional web sources scripts for 
+ <a href="https://www.mp3tag.de/en/index.html" target="_blank">Mp3tag</a>
+</h4>
+
+<h4 align="center">
+ <a href="https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+</h4>
+
+<h4 align="center">
+ IMPORTANT NOTICE: You need to download Mp3tag v3.06b or above for the new iTunes tags to work properly.
+</h4>
 
 ## Table of Contents
 * [Description](https://github.com/MrBukLau/mp3tag-web-sources-scripts#description)
