@@ -10,9 +10,6 @@
 
 json "on"
 
-# debug "on" "C:\debug-index.txt"
-# DebugWriteInput "C:\debug-index-in.txt"
-
 json_select "resultCount"
 IfNot "0"
 	json_foreach "results"
@@ -161,9 +158,6 @@ Replace ".2cother-versions.2cyou-might-also-like.2cvideo-extras.2caudio-extras" 
 RegexpReplace "storefronts\.(.*?)\"" "storefronts\""
 
 json "on" "current"
-
-# debug "on" "C:\debug-album.txt"
-# DebugWriteInput "C:\debug-album-in.txt"
 
 json_unselect_object
 json_select "mp3tagalbum"
