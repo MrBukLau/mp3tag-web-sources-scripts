@@ -6,7 +6,7 @@
 #                                        ITUNES STORE API                                        #
 ##################################################################################################
 [Name]=iTunes Store
-[BasedOn]=https://music.apple.com/
+[BasedOn]=https://itunes.apple.com/
 [WordSeparator]=%20
 [IndexFormat]=%_preview%|%_url%|%Artist%|%Album%|%Explicitness%|%Year%|%Tracks%|%Copyright%
 [Encoding]=url-utf-8
