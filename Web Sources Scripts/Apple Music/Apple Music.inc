@@ -1,4 +1,4 @@
-# Apple Music Web Sources Script for Mp3tag v3.06b and Above
+# Apple Music Web Sources Script for Mp3tag
 [Name]=Apple Music
 [BasedOn]=https://music.apple.com/
 [AlbumUrl]=
