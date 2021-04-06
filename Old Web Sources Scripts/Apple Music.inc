@@ -176,11 +176,6 @@ If "albums"
 						SayRest
 						Say "|"
 
-						json_select "isrc"
-						OutputTo "ISRC"
-						SayRest
-						Say "|"
-
 						json_select "trackNumber"
 						OutputTo "TRACK"
 						SayNextNumber
