@@ -4,7 +4,7 @@ This repository contains web sources scripts for Mp3tag that will allow you to u
 The web sources scripts in this repository include some modifications that were written by me. The original web sources scripts without any of these modifications can be located at a forum called [Mp3tag Community](https://community.mp3tag.de/).
 
 ## Instructions on Adding Web Sources Scripts to Mp3tag
-1. Download [Mp3tag](https://www.mp3tag.de/en/download.html) from the official website
+1. Download Mp3tag from the official website ([Official Version](https://www.mp3tag.de/en/download.html) or [Beta Version](https://community.mp3tag.de/t/mp3tag-development-build-status/455))
 2. Install Mp3tag on your device and open it
 3. Download the web sources scripts from this repository
 4. Move the **.inc** and **.src** files to **%appdata%\mp3tag\data\sources**
