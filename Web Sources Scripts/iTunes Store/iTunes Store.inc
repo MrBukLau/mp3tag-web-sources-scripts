@@ -1,6 +1,6 @@
 # iTunes Store Web Sources Script for Mp3tag
 [Name]=iTunes Store
-[BasedOn]=https://music.apple.com/
+[BasedOn]=https://itunes.apple.com/
 [WordSeparator]=+
 [IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Copyright%|%Store%|%Year%|%Genre%
 [Encoding]=url-utf-8
