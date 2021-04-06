@@ -1,9 +1,9 @@
 # iTunes Country Codes
 **Source:** https://developer.apple.com/documentation/applemusicapi/get_all_storefronts
 
-First, you will have to find the country you want for your web sources script to use for its music database to search for metadata.
-Then, you will be able to get the country code, which is beneath that country's name.
-The country codes are on the lines that say "id" in the front, which means that the country codes are the two letters after it.
+First, you will have to find the country you want to use as your music database to search for metadata.
+Then, you will be able to get the country code of that country, which is beneath that country's name.
+In other words, the country codes are on the lines that have "id" at the front, which means that the country codes are the two letters after it.
 
 **List of Country Codes:**
 ```
