@@ -1,4 +1,4 @@
-# iTunes Store Web Sources Script for Mp3tag v3.06b and Above
+# iTunes Store Web Sources Script for Mp3tag
 [Name]=iTunes Store
 [BasedOn]=https://music.apple.com/
 [WordSeparator]=+
