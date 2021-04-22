@@ -59,6 +59,7 @@ A: You will have to go to the .src file and change the country code in it. To fi
 
 ## Additional Information
 * For information about the syntax of these web sources scripts, click on this [link](https://help.mp3tag.de/main_online.html)
+* For information about the tag fields in Mp3tag, click on this [link](https://help.mp3tag.de/main_tags.html)
 * For instructions on how to use web sources scripts in Mp3tag, click on this [link](https://github.com/jonaaa20/itunes-web-sources)
 * To find more web sources scripts for Mp3tag, click on this [link](https://community.mp3tag.de/c/development/web-sources-scripts/12)
 * To learn more about the APIs, [click here for the Apple Music API](https://developer.apple.com/documentation/applemusicapi/) and [click here for the iTunes Store API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/)
