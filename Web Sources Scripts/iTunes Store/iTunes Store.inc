@@ -183,18 +183,6 @@ IfNot "0"
 		SayRest
 		Say "|"
 
-		OutputTo "ITUNESADVISORY"
-		json_select "trackExplicitness"
-		Replace "notExplicit" "0"
-		Replace "explicit" "1"
-		Replace "cleaned" "2"
-		SayRest
-		Say "|"
-
-		OutputTo "ITUNESMEDIATYPE"
-		Say "Normal"
-		Say "|"
-
 		OutputTo "YEAR"
 		json_select "releaseDate"
 		SayRest		
@@ -230,9 +218,37 @@ IfNot "0"
 		SayRest
 		Say "|"
 
+		OutputTo "ITUNESADVISORY"
+		json_select "trackExplicitness"
+		Replace "notExplicit" "0"
+		Replace "explicit" "1"
+		Replace "cleaned" "2"
+		SayRest
+		Say "|"
+
+		OutputTo "ITUNESGAPLESS"
+		Say "0"
+		Say "|"
+
+		OutputTo "ITUNESMEDIATYPE"
+		Say "Normal"
+		Say "|"
+
 		OutputTo "ITUNESCOUNTRYID"
 		Say "143441"
 		Say "|"
+
+		# OutputTo "ITUNESACCOUNT"
+		# Say “CHANGETOEMAIL”
+		# Say "|"
+
+		# OutputTo "ITUNESOWNER"
+		# Say “CHANGETONAME”
+		# Say "|"
+
+		# OutputTo "ITUNESPURCHASEDATE"
+		# Say “0000-00-00 00:00:00"
+		# Say "|"
 
 		OutputTo "ITUNESGENREID"
 		json_select "primaryGenreName"
