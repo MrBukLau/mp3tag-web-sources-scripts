@@ -238,17 +238,19 @@ IfNot "0"
 		Say "143441"
 		Say "|"
 
-		# OutputTo "ITUNESACCOUNT"
-		# Say "CHANGETOEMAIL"
-		# Say "|"
+		/*
+		OutputTo "ITUNESACCOUNT"
+		Say "CHANGETOEMAILADDRESS"
+		Say "|"
 
-		# OutputTo "ITUNESOWNER"
-		# Say "CHANGETONAME"
-		# Say "|"
+		OutputTo "ITUNESOWNER"
+		Say "CHANGETONAME"
+		Say "|"
 
-		# OutputTo "ITUNESPURCHASEDATE"
-		# Say "0000-00-00 00:00:00"
-		# Say "|"
+		OutputTo "ITUNESPURCHASEDATE"
+		Say "0000-00-00 00:00:00"
+		Say "|"
+		*/
 
 		OutputTo "ITUNESGENREID"
 		json_select "primaryGenreName"
