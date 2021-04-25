@@ -239,15 +239,15 @@ IfNot "0"
 		Say "|"
 
 		# OutputTo "ITUNESACCOUNT"
-		# Say “CHANGETOEMAIL”
+		# Say "CHANGETOEMAIL"
 		# Say "|"
 
 		# OutputTo "ITUNESOWNER"
-		# Say “CHANGETONAME”
+		# Say "CHANGETONAME"
 		# Say "|"
 
 		# OutputTo "ITUNESPURCHASEDATE"
-		# Say “0000-00-00 00:00:00"
+		# Say "0000-00-00 00:00:00"
 		# Say "|"
 
 		OutputTo "ITUNESGENREID"
