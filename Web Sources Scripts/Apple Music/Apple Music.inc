@@ -288,15 +288,15 @@ If "albums"
 						Say "|"
 
 						# OutputTo "ITUNESACCOUNT"
-						# Say “CHANGETOEMAIL”
+						# Say "CHANGETOEMAIL"
 						# Say "|"
 
 						# OutputTo "ITUNESOWNER"
-						# Say “CHANGETONAME”
+						# Say "CHANGETONAME"
 						# Say "|"
 
 						# OutputTo "ITUNESPURCHASEDATE"
-						# Say “0000-00-00 00:00:00"
+						# Say "0000-00-00 00:00:00"
 						# Say "|"
 
 						json_select_array "genreNames" 1
