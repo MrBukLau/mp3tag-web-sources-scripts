@@ -371,6 +371,27 @@ If "albums"
 						EndIf
 
 					json_unselect_object
+					json_select_object "relationships"
+
+						json_select_object "composers"
+							json_select_many "data" "id" ", "
+							OutputTo "ITUNESCOMPOSERID"
+							IfNot ""
+								SayUntil ", "
+							EndIf
+							Say "|"
+						json_unselect_object
+
+						json_select_object "artists"
+							json_select_many "data" "id" ", "
+							OutputTo "ITUNESARTISTID"
+							IfNot ""
+								SayUntil ", "
+							EndIf
+							Say "|"
+						json_unselect_object
+
+					json_unselect_object
 				EndIf
 			json_foreach_end
 		json_unselect_object
