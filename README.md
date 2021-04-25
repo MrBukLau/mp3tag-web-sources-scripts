@@ -17,6 +17,7 @@
 ## Table of Contents
 * [Description](https://github.com/MrBukLau/mp3tag-web-sources-scripts#description)
 * [Instructions on Adding Web Sources Scripts to Mp3tag](https://github.com/MrBukLau/mp3tag-web-sources-scripts#instructions-on-adding-web-sources-scripts-to-mp3tag)
+* [Commented-Out Tag Fields in the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/README.md#commented-out-tag-fields-in-the-web-sources-scripts)
 * [Questions About the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts#questions-about-the-web-sources-scripts)
   * [How do I change the purchasing country?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-change-the-purchasing-country)
   * [How do I get a genre ID that is not listed in the web sources scripts?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-get-a-genre-id-that-is-not-listed-in-the-web-sources-scripts)
