@@ -273,20 +273,29 @@ If "albums"
 						EndIf
 						Say "|"
 
-						json_select_object "playParams"
-						IfNot ""
-							json_select "kind"
-							If "song"
-								OutputTo "ITUNESMEDIATYPE"
-								Say "Normal"
-								Say "|"
-							EndIf
-							json_unselect_object
-						EndIf
+						OutputTo "ITUNESGAPLESS"
+						Say "0"
+						Say "|"
+
+						OutputTo "ITUNESMEDIATYPE"
+						Say "Normal"
+						Say "|"
 
 						OutputTo "ITUNESCOUNTRYID"
 						Say "143441"
 						Say "|"
+
+						# OutputTo "ITUNESACCOUNT"
+						# Say “CHANGETOEMAIL”
+						# Say "|"
+
+						# OutputTo "ITUNESOWNER"
+						# Say “CHANGETONAME”
+						# Say "|"
+
+						# OutputTo "ITUNESPURCHASEDATE"
+						# Say “0000-00-00 00:00:00"
+						# Say "|"
 
 						json_select_array "genreNames" 1
 						If "Country"
