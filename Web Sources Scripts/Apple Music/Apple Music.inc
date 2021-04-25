@@ -287,19 +287,17 @@ If "albums"
 						Say "143441"
 						Say "|"
 
-						/*
-						OutputTo "ITUNESACCOUNT"
-						Say "CHANGETOEMAILADDRESS"
-						Say "|"
+						# OutputTo "ITUNESACCOUNT"
+						# Say "CHANGETOEMAILADDRESS"
+						# Say "|"
 
-						OutputTo "ITUNESOWNER"
-						Say "CHANGETONAME"
-						Say "|"
+						# OutputTo "ITUNESOWNER"
+						# Say "CHANGETONAME"
+						# Say "|"
 
-						OutputTo "ITUNESPURCHASEDATE"
-						Say "0000-00-00 00:00:00"
-						Say "|"
-						*/
+						# OutputTo "ITUNESPURCHASEDATE"
+						# Say "0000-00-00 00:00:00"
+						# Say "|"
 
 						json_select_array "genreNames" 1
 						If "Country"
