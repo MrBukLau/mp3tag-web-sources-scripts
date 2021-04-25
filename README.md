@@ -37,7 +37,7 @@ The web sources scripts in this repository include some modifications that were 
 4. Move the **.inc** and **.src** files to `%appdata%\mp3tag\data\sources`
 
 ## Commented-Out Tag Fields in the Web Sources Scripts
-There are three commented-out tag fields in these web sources scripts because these three tag fields will contain your personal information and will have to be edited by you. Those three commented-out tag fields are the following: `ITUNESACCOUNT`, `ITUNESOWNER`, and `ITUNESPURCHASEDATE`. You can leave them be if you do not want to add your personal information to your songs.
+There are three commented-out tag fields in these web sources scripts because these three tag fields will contain your personal information and will have to be edited by you. The three commented-out tag fields are the following: `ITUNESACCOUNT`, `ITUNESOWNER`, and `ITUNESPURCHASEDATE`. You can leave them be if you do not want to add your personal information to your songs.
 
 `ITUNESACCOUNT` - Your Email Address
 <br>
