@@ -28,7 +28,7 @@
 ## Description
 This repository contains web sources scripts for Mp3tag that will allow you to use Apple Music or the iTunes Store to update music metadata. These web sources scripts for Mp3tag can automatically add tags to any song if that song is available on Apple Music and/or the iTunes Store. For these web sources scripts to work, the Apple Music or iTunes Store URL of a song is needed, which can be obtained by clicking on "Copy Link" in Apple Music or the iTunes Store.
 
-The web sources scripts in this repository include some modifications that were made by me. The original version of the web sources scripts without any of these modifications can be located at a forum called [Mp3tag Community](https://community.mp3tag.de/). Special thanks to AreDigg on Mp3tag Community for making the original version of the Apple Music and iTunes Store web sources scripts.
+The web sources scripts in this repository include some modifications that were made by me. The original web sources scripts without any of these modifications can be located at a forum called [Mp3tag Community](https://community.mp3tag.de/). Special thanks to AreDigg on Mp3tag Community for making those original versions of the Apple Music and iTunes Store web sources scripts.
 
 ## Instructions on Adding Web Sources Scripts to Mp3tag
 1. Download Mp3tag from the official website ([Official Version](https://www.mp3tag.de/en/download.html) or [Beta Version](https://community.mp3tag.de/t/mp3tag-development-build-status/455))
