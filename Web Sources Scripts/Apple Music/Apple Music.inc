@@ -3,7 +3,7 @@
 [BasedOn]=https://itunes.apple.com/
 [AlbumUrl]=
 [WordSeparator]=+
-[IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Collection ID%|%Copyright%|%Store%|%Year%|%Genre%
+[IndexFormat]=%_url%|%Artist%|%Album%|%_preview%|%Version%|%Tracks%|%Collection ID%|%Copyright%|%Store%|%Currency%|%Price%|%Year%|%Genre%
 [Encoding]=url-utf-8
 
 [ParserScriptIndex]=...
@@ -59,6 +59,14 @@ IfNot "0"
 		Say "|"
 
 		json_select "country"
+		SayRest
+		Say "|"
+
+		json_select "currency"
+		SayRest
+		Say "|"
+
+		json_select "collectionPrice"
 		SayRest
 		Say "|"
 
@@ -119,6 +127,14 @@ IfNot "0"
 		SayRest
 		Say "|"
 
+		json_select "currency"
+		SayRest
+		Say "|"
+
+		json_select "collectionPrice"
+		SayRest
+		Say "|"
+
 		json_select "releaseDate"
 		SayNextNumber
 		Say "|"
@@ -154,12 +170,14 @@ RegexpReplace "2crecord-labels\.l\.(.*?)\.omit" "locale"
 Replace ".2cartists.locale.5bresource" ""
 Replace ".5d.autos.views.appears-on.2cmore-by-artist.2crelated-videos" ""
 Replace ".2cother-versions.2cyou-might-also-like.2cvideo-extras.2caudio-extras" ""
+Replace ".5d.autos.platform.web.views.appears-on.2cmore-by-artist.2crelated-videos" ""
 
 RegexpReplace "storefronts\.(.*?)\"" "storefronts\""
 
 json "on" "current"
 
 json_unselect_object
+
 json_select "mp3tagalbum"
 json_select_array "d" 1
 json_select "type"
