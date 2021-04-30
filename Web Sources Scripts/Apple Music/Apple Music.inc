@@ -246,6 +246,12 @@ If "albums"
 						SayNextNumber
 						Say "|"
 
+						json_select "discNumber"
+						Set "TOTALDISCS"
+						OutputTo "TOTALDISCS"
+						SayNextNumber
+						Say "|"
+
 						json_select_array "genreNames" 1
 						OutputTo "GENRE"
 						SayRest
@@ -305,17 +311,17 @@ If "albums"
 						Say "143441"
 						Say "|"
 
-						# OutputTo "ITUNESACCOUNT"
-						# Say "CHANGETOEMAILADDRESS"
-						# Say "|"
+#						OutputTo "ITUNESACCOUNT"
+#						Say "CHANGETOEMAILADDRESS"
+#						Say "|"
 
-						# OutputTo "ITUNESOWNER"
-						# Say "CHANGETONAME"
-						# Say "|"
+#						OutputTo "ITUNESOWNER"
+#						Say "CHANGETONAME"
+#						Say "|"
 
-						# OutputTo "ITUNESPURCHASEDATE"
-						# Say "0000-00-00 00:00:00"
-						# Say "|"
+#						OutputTo "ITUNESPURCHASEDATE"
+#						Say "0000-00-00 00:00:00"
+#						Say "|"
 
 						json_select_array "genreNames" 1
 						If "Country"
@@ -406,18 +412,19 @@ If "albums"
 							json_select_many "data" "id" ", "
 							OutputTo "ITUNESCOMPOSERID"
 							IfNot ""
-								SayUntil ", "
+								SayRest
 							EndIf
 							Say "|"
 						json_unselect_object
 
 						json_select_object "artists"
-							json_select_many "data" "id" ", "
-							OutputTo "ITUNESARTISTID"
-							IfNot ""
-								SayUntil ", "
-							EndIf
-							Say "|"
+							json_select_array "data" 1
+								json_select "id"
+								OutputTo "ITUNESARTISTID"
+								IfNot ""
+									SayRest
+								EndIf
+								Say "|"
 						json_unselect_object
 
 					json_unselect_object
