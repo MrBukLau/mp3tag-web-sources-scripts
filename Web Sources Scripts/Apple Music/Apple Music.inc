@@ -165,7 +165,9 @@ Replace ".2ccontentrating.2ceditorialartwork" ""
 Replace ".2ceditorialnotes" ""
 Replace ".2cname.2cplayparams.2creleasedate" ""
 Replace ".2curl.fields.5bartists.5d.name.2curl.fields.5brecord-labels" ""
-Replace ".5d.name.2curl.include.5bsongs.5d.artists.2ccomposers.include.tracks" ""
+Replace ".5d.name.2curl.include" ""
+Replace ".5bmusic-videos.5d.artists.2ccomposers.include" ""
+Replace ".5bsongs.5d.artists.2ccomposers.include.tracks" ""
 RegexpReplace "2crecord-labels\.l\.(.*?)\.omit" "locale"
 Replace ".2cartists.locale.5bresource" ""
 Replace ".5d.autos.views.appears-on.2cmore-by-artist.2crelated-videos" ""
@@ -175,8 +177,6 @@ Replace ".5d.autos.platform.web.views.appears-on.2cmore-by-artist.2crelated-vide
 RegexpReplace "storefronts\.(.*?)\"" "storefronts\""
 
 json "on" "current"
-
-json_unselect_object
 
 json_select "mp3tagalbum"
 json_select_array "d" 1
