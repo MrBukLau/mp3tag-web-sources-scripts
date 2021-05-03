@@ -299,30 +299,6 @@ If "albums"
 						EndIf
 						Say "|"
 
-						OutputTo "ITUNESGAPLESS"
-						Say "0"
-						Say "|"
-
-						OutputTo "ITUNESMEDIATYPE"
-						Say "Normal"
-						Say "|"
-
-						OutputTo "ITUNESCOUNTRYID"
-						Say "143441"
-						Say "|"
-
-#						OutputTo "ITUNESACCOUNT"
-#						Say "CHANGETOEMAILADDRESS"
-#						Say "|"
-
-#						OutputTo "ITUNESOWNER"
-#						Say "CHANGETONAME"
-#						Say "|"
-
-#						OutputTo "ITUNESPURCHASEDATE"
-#						Say "0000-00-00 00:00:00"
-#						Say "|"
-
 						json_select_array "genreNames" 1
 						If "Country"
 							OutputTo "ITUNESGENREID"
@@ -409,25 +385,67 @@ If "albums"
 					json_select_object "relationships"
 
 						json_select_object "composers"
-							json_select_many "data" "id" ", "
+							json_foreach "data"
+								IfNot "0"
+									json_foreach_end
+									json_select_object "relationships"
+									json_select_object "composers"
+									json_select_array "data" 1
+										json_select "id"
+										OutputTo "ITUNESCOMPOSERID"
+										SayRest
+									json_unselect_object
+								Else
+									json_foreach_end
+								EndIf
 							OutputTo "ITUNESCOMPOSERID"
-							IfNot ""
-								SayRest
-							EndIf
 							Say "|"
 						json_unselect_object
 
 						json_select_object "artists"
-							json_select_array "data" 1
-								json_select "id"
-								OutputTo "ITUNESARTISTID"
-								IfNot ""
-									SayRest
+							json_foreach "data"
+								IfNot "0"
+									json_foreach_end
+									json_select_object "relationships"
+									json_select_object "artists"
+									json_select_array "data" 1
+										json_select "id"
+										OutputTo "ITUNESARTISTID"
+										SayRest
+									json_unselect_object
+								Else
+									json_foreach_end
 								EndIf
-								Say "|"
+							OutputTo "ITUNESARTISTID"
+							Say "|"
 						json_unselect_object
 
 					json_unselect_object
+
+					OutputTo "ITUNESGAPLESS"
+					Say "0"
+					Say "|"
+
+					OutputTo "ITUNESMEDIATYPE"
+					Say "Normal"
+					Say "|"
+
+					OutputTo "ITUNESCOUNTRYID"
+					Say "143441"
+					Say "|"
+
+#					OutputTo "ITUNESACCOUNT"
+#					Say "CHANGETOEMAILADDRESS"
+#					Say "|"
+
+#					OutputTo "ITUNESOWNER"
+#					Say "CHANGETONAME"
+#					Say "|"
+
+#					OutputTo "ITUNESPURCHASEDATE"
+#					Say "0000-00-00 00:00:00"
+#					Say "|"
+
 				EndIf
 			json_foreach_end
 		json_unselect_object
