@@ -218,14 +218,6 @@ IfNot "0"
 		SayRest
 		Say "|"
 
-		OutputTo "ITUNESADVISORY"
-		json_select "trackExplicitness"
-		Replace "notExplicit" "0"
-		Replace "explicit" "1"
-		Replace "cleaned" "2"
-		SayRest
-		Say "|"
-
 		OutputTo "ITUNESGENREID"
 		json_select "primaryGenreName"
 		If "Country"
@@ -292,6 +284,14 @@ IfNot "0"
 			Say "51"
 			Say "|"
 		EndIf
+
+		OutputTo "ITUNESADVISORY"
+		json_select "trackExplicitness"
+		Replace "notExplicit" "0"
+		Replace "explicit" "1"
+		Replace "cleaned" "2"
+		SayRest
+		Say "|"
 
 		OutputTo "ITUNESGAPLESS"
 		Say "0"
