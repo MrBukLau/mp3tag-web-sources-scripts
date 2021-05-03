@@ -226,30 +226,6 @@ IfNot "0"
 		SayRest
 		Say "|"
 
-		OutputTo "ITUNESGAPLESS"
-		Say "0"
-		Say "|"
-
-		OutputTo "ITUNESMEDIATYPE"
-		Say "Normal"
-		Say "|"
-
-		OutputTo "ITUNESCOUNTRYID"
-		Say "143441"
-		Say "|"
-
-#		OutputTo "ITUNESACCOUNT"
-#		Say "CHANGETOEMAILADDRESS"
-#		Say "|"
-
-#		OutputTo "ITUNESOWNER"
-#		Say "CHANGETONAME"
-#		Say "|"
-
-#		OutputTo "ITUNESPURCHASEDATE"
-#		Say "0000-00-00 00:00:00"
-#		Say "|"
-
 		OutputTo "ITUNESGENREID"
 		json_select "primaryGenreName"
 		If "Country"
@@ -316,6 +292,30 @@ IfNot "0"
 			Say "51"
 			Say "|"
 		EndIf
+
+		OutputTo "ITUNESGAPLESS"
+		Say "0"
+		Say "|"
+
+		OutputTo "ITUNESMEDIATYPE"
+		Say "Normal"
+		Say "|"
+
+		OutputTo "ITUNESCOUNTRYID"
+		Say "143441"
+		Say "|"
+
+#		OutputTo "ITUNESACCOUNT"
+#		Say "CHANGETOEMAILADDRESS"
+#		Say "|"
+
+#		OutputTo "ITUNESOWNER"
+#		Say "CHANGETONAME"
+#		Say "|"
+
+#		OutputTo "ITUNESPURCHASEDATE"
+#		Say "0000-00-00 00:00:00"
+#		Say "|"
 
 	EndIf
 	json_foreach_end
