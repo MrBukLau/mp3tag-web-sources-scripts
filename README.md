@@ -63,7 +63,8 @@ There are three commented-out tag fields in these web sources scripts because th
 #### Q: How do I change the purchasing country?
 A: The default purchasing country is the United States. To change the default purchasing country, you will have to go to the .inc file and search for the line that has `ITUNESCOUNTRYID` in it. Below this line, you will see 143441, which is the iTunes storefront ID of the United States. You can change this storefront ID to the storefront ID of the country you want it to be, and you can find these storefront IDs of different countries at this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) and this [link](https://gist.github.com/hmml/8942940).
 
-*Example Using Germany as the Purchasing Country:* <br>
+*Example Using Germany as the Purchasing Country:*
+<br>
 ```
 OutputTo "ITUNESCOUNTRYID"
 Say "143443"
@@ -78,6 +79,7 @@ A: The Apple Music web sources script only gets the International Standard Recor
 **Content Provider**:isrc:**Actual ISRC**
 
 *XID Example:*
+<br>
 ```
 SonyBMG:isrc:USSM19922509
 ```
@@ -88,7 +90,8 @@ A: Some of the most common genre IDs are already accounted for in these web sour
 #### Q: How do I get music metadata from a country of Apple Music or iTunes Store that is not available in this repository?
 A: You will have to go to the .src file and change the country code in it. To find country codes, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) or this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes.md).
 
-*Example Using Germany as the Country Code:* <br>
+*Example Using Germany as the Country Code:*
+<br>
 ```
 [IndexUrl]=https://itunes.apple.com/search?media=music&entity=album&limit=200&country=de&lang=en_us
 ```
