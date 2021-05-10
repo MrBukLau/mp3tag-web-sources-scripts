@@ -71,7 +71,7 @@ Say "|"
 ```
 
 #### Q: How do I complete the XID tag field?
-A: The Apple Music web sources script only gets the International Standard Recording Code, also known as the ISRC code, for the XID tag field. Two other parts are needed to complete the XID tag field. One of those parts is the content provider, which is the company that distributes the music. To get the content provider, you will have to search for them online, but I have provided some common content providers in this [text file](https://github.com/MrBukLau/mp3tag-web-sources-scripts/raw/main/Information/iTunes%20XID.txt). The other part is just the word ISRC in lowercase letters. In total, there are three parts to the XID tag field, and they are separated from each other by colons.
+A: The Apple Music web sources script only gets the International Standard Recording Code, also known as the ISRC code, for the XID tag field. Two other parts are needed to complete the XID tag field. One of those parts is the content provider, which is the company that distributes the music. To get the content provider, you will have to search for them online, but I have listed some common content providers in this [text file](https://github.com/MrBukLau/mp3tag-web-sources-scripts/raw/main/Information/iTunes%20XID.txt). The other part is just the word ISRC in lowercase letters. In total, there are three parts to the XID tag field, and they are separated from each other by colons.
 
 *XID Format:*
 <br>
