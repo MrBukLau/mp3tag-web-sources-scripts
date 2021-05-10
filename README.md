@@ -21,6 +21,7 @@
 * [Commented-Out Tag Fields in the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts#commented-out-tag-fields-in-the-web-sources-scripts)
 * [Questions About the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts#questions-about-the-web-sources-scripts)
   * [How do I change the purchasing country?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-change-the-purchasing-country)
+  * [How do I complete the XID tag field?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-complete-the-xid-tag-field)
   * [How do I get a genre ID that is not listed in the web sources scripts?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-get-a-genre-id-that-is-not-listed-in-the-web-sources-scripts)
   * [How do I get music metadata from a country of Apple Music or iTunes Store that is not available in this repository?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-get-music-metadata-from-a-country-of-apple-music-or-itunes-store-that-is-not-available-in-this-repository)
 * [Additional Information](https://github.com/MrBukLau/mp3tag-web-sources-scripts#additional-information)
