@@ -69,6 +69,18 @@ Say "143443"
 Say "|"
 ```
 
+#### Q: How do I complete the XID tag field?
+A: The Apple Music web sources script only gets the International Standard Recording Code, also known as the ISRC code, for the XID tag field. Two other parts are needed to complete the XID tag field. One of those parts is the content provider, which is the company that distributes the music. To get the content provider, you will have to search for them online, but I have provided some common content providers in this [text file](https://github.com/MrBukLau/mp3tag-web-sources-scripts/raw/main/Information/iTunes%20XID.txt). The other part is just the word ISRC in lowercase letters. In total, there are three parts to the XID tag field, and they are separated from each other by colons.
+
+*XID Format:*
+<br>
+**Content Provider**:isrc:**Actual ISRC**
+
+*XID Example:*
+```
+SonyBMG:isrc:USSM19922509
+```
+
 #### Q: How do I get a genre ID that is not listed in the web sources scripts?
 A: Some of the most common genre IDs are already accounted for in these web sources scripts. However, if there is a genre ID that is not listed in web sources scripts, you can add that genre ID in the .inc file by searching for the line that says `ITUNESGENREID` and following the same format as the other genre IDs. To find more genre IDs, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Genre%20IDs.csv).
 
@@ -86,6 +98,7 @@ A: You will have to go to the .src file and change the country code in it. To fi
 * To learn more about the APIs, [click here for the Apple Music API](https://developer.apple.com/documentation/applemusicapi/) and [click here for the iTunes Store API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/)
 * To learn more about the syntax of these web sources scripts for Mp3tag, click on this [link](https://help.mp3tag.de/main_online.html)
 * To learn more about the tag fields in Mp3tag, click on this [link](https://help.mp3tag.de/main_tags.html)
+* To learn more about the XID tag field, click on this [link](https://community.mp3tag.de/t/support-for-itunesalbumadvisory-field/51715/10)
 
 ## License
 [MIT](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE)
