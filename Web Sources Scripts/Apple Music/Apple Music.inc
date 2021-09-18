@@ -211,7 +211,7 @@ If "albums"
 		json_select "copyright"
 		OutputTo "COPYRIGHT"
 		SayRest
-		
+
 		json_select "artistName"
 		If "Various Artists"
 			OutputTo "COMPILATION"
