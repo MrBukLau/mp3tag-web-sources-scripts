@@ -59,6 +59,8 @@ There are three commented-out tag fields in these web sources scripts because th
 <br>
 `ITUNESPURCHASEDATE` - Date of Purchase (Year-Month-Day Hour:Minute:Second)
 
+There are three additional commented-out tag fields in the Apple Music web sources script. They are the following: `LABEL`, `TOTALTRACKS`, and `UPC`. `TOTALTRACKS` was commented out because it does not account for when an album has multiple discs, which means that each disc would not have a different number for its `TOTALTRACKS`. The other two tag fields are just additional information that you can add to your songs if you want to add them.
+
 ## Questions About the Web Sources Scripts
 #### Q: How do I change the purchasing country?
 A: The default purchasing country is the United States. To change the default purchasing country, you will have to go to the .inc file and search for the line that has `ITUNESCOUNTRYID` in it. Below this line, you will see 143441, which is the iTunes storefront ID of the United States. You can change this storefront ID to the storefront ID of the country you want it to be, and you can find these storefront IDs of different countries at this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) and this [link](https://gist.github.com/hmml/8942940).
