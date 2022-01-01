@@ -4,8 +4,8 @@
  <br>
  Mp3tag Web Sources Scripts
  <br>
- <a href="https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
- <a href="https://www.mp3tag.de/en/index.html"><img src="https://img.shields.io/badge/Program-Mp3tag-orange.svg"></a>
+ <a href="https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-181717?style=flat-square&logo=github"></a>
+ <a href="https://www.mp3tag.de/en/index.html"><img src="https://img.shields.io/badge/Program-Mp3tag-f79101?style=flat-square&logo=apple-music"></a>
 </h1>
 
 <p align="center">
