@@ -1,5 +1,4 @@
 A-SketchInc:isrc:
-anime:isrc:
 Armada:isrc:
 ArtEmpireIndustriesLtd:isrc:
 AudioBee:isrc:
