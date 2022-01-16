@@ -16,17 +16,17 @@
 </h1>
 
 ## Table of Contents
-* [Description](https://github.com/MrBukLau/mp3tag-web-sources-scripts#description)
-* [Step-by-Step Instructions on Adding Web Sources Scripts to Mp3tag](https://github.com/MrBukLau/mp3tag-web-sources-scripts#step-by-step-instructions-on-adding-web-sources-scripts-to-mp3tag)
-* [Step-by-Step Instructions on Using Web Sources Scripts in Mp3tag](https://github.com/MrBukLau/mp3tag-web-sources-scripts#step-by-step-instructions-on-using-web-sources-scripts-in-mp3tag)
-* [Commented-Out Tag Fields in the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts#commented-out-tag-fields-in-the-web-sources-scripts)
-* [Questions About the Web Sources Scripts](https://github.com/MrBukLau/mp3tag-web-sources-scripts#questions-about-the-web-sources-scripts)
-  * [How do I change the purchasing country?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-change-the-purchasing-country)
-  * [How do I complete the XID tag field?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-complete-the-xid-tag-field)
-  * [How do I get a genre ID that is not listed in the web sources scripts?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-get-a-genre-id-that-is-not-listed-in-the-web-sources-scripts)
-  * [How do I get music metadata from a country of Apple Music or iTunes Store that is not available in this repository?](https://github.com/MrBukLau/mp3tag-web-sources-scripts#q-how-do-i-get-music-metadata-from-a-country-of-apple-music-or-itunes-store-that-is-not-available-in-this-repository)
-* [Additional Information](https://github.com/MrBukLau/mp3tag-web-sources-scripts#additional-information)
-* [License](https://github.com/MrBukLau/mp3tag-web-sources-scripts#license)
+* [Description](#description)
+* [Step-by-Step Instructions on Adding Web Sources Scripts to Mp3tag](#step-by-step-instructions-on-adding-web-sources-scripts-to-mp3tag)
+* [Step-by-Step Instructions on Using Web Sources Scripts in Mp3tag](#step-by-step-instructions-on-using-web-sources-scripts-in-mp3tag)
+* [Commented-Out Tag Fields in the Web Sources Scripts](#commented-out-tag-fields-in-the-web-sources-scripts)
+* [Questions About the Web Sources Scripts](#questions-about-the-web-sources-scripts)
+  * [How do I change the purchasing country?](#q-how-do-i-change-the-purchasing-country)
+  * [How do I complete the XID tag field?](#q-how-do-i-complete-the-xid-tag-field)
+  * [How do I get a genre ID that is not listed in the web sources scripts?](#q-how-do-i-get-a-genre-id-that-is-not-listed-in-the-web-sources-scripts)
+  * [How do I get music metadata from a country of Apple Music or iTunes Store that is not available in this repository?](#q-how-do-i-get-music-metadata-from-a-country-of-apple-music-or-itunes-store-that-is-not-available-in-this-repository)
+* [Additional Information](#additional-information)
+* [License](#license)
 
 ## Description
 This repository contains web sources scripts for Mp3tag that will allow for the databases of Apple Music and the iTunes Store to be used to update music metadata. These web sources scripts for Mp3tag can automatically add tags to any song available on Apple Music and/or the iTunes Store. For these web sources scripts to work, the Apple Music or iTunes Store URL of a song is needed, which can be easily obtained by clicking on "Copy Link" in Apple Music or the iTunes Store.
