@@ -1,78 +1,169 @@
 Country Names,Country Codes,Storefront IDs
+Algeria,dz,143563
+Angola,ao,143564
+Anguilla,ai,143538
+Antigua and Barbuda,ag,143540
 Argentina,ar,143505
+Armenia,am,143524
 Australia,au,143460
 Austria,at,143445
+Azerbaijan,az,143568
+Bahamas,bs,143539
+Bahrain,bh,143559
+Barbados,bb,143541
+Belarus,by,143565
 Belgium,be,143446
+Belize,bz,143555
+Benin,bj,143576
+Bermuda,bm,143542
+Bhutan,bt,143577
+Bolivia,bo,143556
+Bosnia and Herzegovina,ba,143612
+Botswana,bw,143525
 Brazil,br,143503
+British Virgin Islands,vg,143543
+Bulgaria,bg,143526
+Cambodia,kh,143579
+Cameroon,cm,143574
 Canada,ca,143455
+Cape Verde,cv,143580
+Cayman Islands,ky,143544
+Chad,td,143581
 Chile,cl,143483
 China,cn,143465
 Colombia,co,143501
 Costa Rica,cr,143495
 Croatia,hr,143494
+Cyprus,cy,143557
 Czech Republic,cz,143489
+Democratic Republic of the Congo,cd,143613
 Denmark,dk,143458
+Dominica,dm,143545
 Dominican Republic,do,143508
 Ecuador,ec,143509
 Egypt,eg,143516
 El Salvador,sv,143506
 Estonia,ee,143518
+Federated States of Micronesia,fm,143591
+Fiji,fj,143583
 Finland,fi,143447
 France,fr,143442
+Gabon,ga,143614
+Gambia,gm,143584
+Georgia,ge,?
 Germany,de,143443
+Ghana,gh,143573
 Greece,gr,143448
+Grenada,gd,143546
 Guatemala,gt,143504
+Guinea-Bissau,gw,143585
+Guyana,gy,143553
 Honduras,hn,143510
 Hong Kong,hk,143463
 Hungary,hu,143482
+Iceland,is,143558
 India,in,143467
 Indonesia,id,143476
+Iraq,iq,143617
 Ireland,ie,143449
 Israel,il,143491
 Italy,it,143450
+Ivory Coast,ci,143527
 Jamaica,jm,143511
 Japan,jp,143462
-Kazakstan,kz,143517
+Jordan,jo,143528
+Kazakhstan,kz,143517
+Kenya,ke,143529
+Kosovo,xk,143624
 Kuwait,kw,143493
+Kyrgyzstan,kg,143586
+Laos,la,143587
 Latvia,lv,143519
 Lebanon,lb,143497
+Liberia,lr,143588
+Libya,ly,143567
 Lithuania,lt,143520
 Luxembourg,lu,143451
 Macau,mo,143515
+Madagascar,mg,143531
+Malawi,mw,143589
 Malaysia,my,143473
+Maldives,mv,143488
+Mali,ml,143532
 Malta,mt,143521
+Mauritania,mr,143590
+Mauritius,mu,143533
 Mexico,mx,143468
+Moldova,md,143523
+Mongolia,mn,143592
+Montenegro,me,143619
+Montserrat,ms,143547
+Morocco,ma,143620
+Mozambique,mz,143593
+Myanmar,mm,143570
+Namibia,na,143594
+Nepal,np,143484
 Netherlands,nl,143452
 New Zealand,nz,143461
 Nicaragua,ni,143512
+Niger,ne,143534
+Nigeria,ng,143561
+North Macedonia,mk,143530
 Norway,no,143457
+Oman,om,143562
 Pakistan,pk,143477
 Panama,pa,143485
+Papua New Guinea,pg,143597
 Paraguay,py,143513
 Peru,pe,143507
 Philippines,ph,143474
 Poland,pl,143478
 Portugal,pt,143453
 Qatar,qa,143498
-Republic of Korea (South Korea),kr,143466
-Republic of Moldova,md,143523
+Republic of Congo,cg,143582
 Romania,ro,143487
 Russia,ru,143469
+Rwanda,rw,143621
+Saint Kitts and Nevis,kn,143548
+Saint Lucia,lc,143549
+Saint Vincent and the Grenadines,vc,143550
 Saudi Arabia,sa,143479
+Senegal,sn,143535
+Serbia,rs,143500
+Seychelles,sc,143599
+Sierra Leone,sl,143600
 Singapore,sg,143464
 Slovakia,sk,143496
 Slovenia,si,143499
+Solomon Islands,sb,143601
 South Africa,za,143472
+South Korea,kr,143466
 Spain,es,143454
 Sri Lanka,lk,143486
+Suriname,sr,143554
+Swaziland,sz,143602
 Sweden,se,143456
 Switzerland,ch,143459
 Taiwan,tw,143470
+Tajikistan,tj,143603
+Tanzania,tz,143572
 Thailand,th,143475
+Tonga,to,143608
+Trinidad and Tobago,tt,143551
+Tunisia,tn,143536
 Turkey,tr,143480
+Turkmenistan,tm,143604
+Turks and Caicos,tc,143552
+Uganda,ug,143537
+Ukraine,ua,143492
 United Arab Emirates,ae,143481
 United Kingdom,gb,143444
 United States,us,143441
 Uruguay,uy,143514
+Uzbekistan,uz,143566
+Vanuatu,vu,143609
 Venezuela,ve,143502
 Vietnam,vn,143471
+Yemen,ye,143571
+Zambia,zm,143622
+Zimbabwe,zw,143605
