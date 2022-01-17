@@ -1,4 +1,6 @@
 Country Names,Country Codes,Storefront IDs
+Afghanistan,af,143610
+Albania,al,143575
 Algeria,dz,143563
 Angola,ao,143564
 Anguilla,ai,143538
@@ -22,7 +24,9 @@ Bosnia and Herzegovina,ba,143612
 Botswana,bw,143525
 Brazil,br,143503
 British Virgin Islands,vg,143543
+Brunei,bn,143560
 Bulgaria,bg,143526
+Burkina Faso,bf,143578
 Cambodia,kh,143579
 Cameroon,cm,143574
 Canada,ca,143455
@@ -50,7 +54,6 @@ Finland,fi,143447
 France,fr,143442
 Gabon,ga,143614
 Gambia,gm,143584
-Georgia,ge,?
 Germany,de,143443
 Ghana,gh,143573
 Greece,gr,143448
@@ -102,6 +105,7 @@ Morocco,ma,143620
 Mozambique,mz,143593
 Myanmar,mm,143570
 Namibia,na,143594
+Nauru,nr,143606
 Nepal,np,143484
 Netherlands,nl,143452
 New Zealand,nz,143461
@@ -112,6 +116,7 @@ North Macedonia,mk,143530
 Norway,no,143457
 Oman,om,143562
 Pakistan,pk,143477
+Palau,pw,143595
 Panama,pa,143485
 Papua New Guinea,pg,143597
 Paraguay,py,143513
@@ -127,6 +132,7 @@ Rwanda,rw,143621
 Saint Kitts and Nevis,kn,143548
 Saint Lucia,lc,143549
 Saint Vincent and the Grenadines,vc,143550
+Sao Tome and Principe,st,143598
 Saudi Arabia,sa,143479
 Senegal,sn,143535
 Serbia,rs,143500
