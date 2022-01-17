@@ -48,12 +48,14 @@ Ecuador,ec,143509
 Egypt,eg,143516
 El Salvador,sv,143506
 Estonia,ee,143518
+Eswatini,sz,143602
 Federated States of Micronesia,fm,143591
 Fiji,fj,143583
 Finland,fi,143447
 France,fr,143442
 Gabon,ga,143614
 Gambia,gm,143584
+Georgia,ge,?
 Germany,de,143443
 Ghana,gh,143573
 Greece,gr,143448
@@ -87,7 +89,7 @@ Liberia,lr,143588
 Libya,ly,143567
 Lithuania,lt,143520
 Luxembourg,lu,143451
-Macau,mo,143515
+Macao,mo,143515
 Madagascar,mg,143531
 Malawi,mw,143589
 Malaysia,my,143473
@@ -125,7 +127,7 @@ Philippines,ph,143474
 Poland,pl,143478
 Portugal,pt,143453
 Qatar,qa,143498
-Republic of Congo,cg,143582
+Republic of the Congo,cg,143582
 Romania,ro,143487
 Russia,ru,143469
 Rwanda,rw,143621
@@ -147,7 +149,6 @@ South Korea,kr,143466
 Spain,es,143454
 Sri Lanka,lk,143486
 Suriname,sr,143554
-Swaziland,sz,143602
 Sweden,se,143456
 Switzerland,ch,143459
 Taiwan,tw,143470
