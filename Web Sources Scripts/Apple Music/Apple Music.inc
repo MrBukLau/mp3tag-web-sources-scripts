@@ -174,7 +174,6 @@ Replace ".2cartists.locale.5bresource" ""
 Replace ".5d.autos.views.appears-on.2cmore-by-artist.2crelated-videos" ""
 Replace ".2cother-versions.2cyou-might-also-like.2cvideo-extras.2caudio-extras" ""
 Replace ".5d.autos.platform.web.views.appears-on.2cmore-by-artist.2crelated-videos" ""
-
 RegexpReplace "storefronts\.(.*?)\"" "storefronts\""
 
 json "on" "current"
@@ -225,17 +224,14 @@ If "albums"
 #		json_select "recordLabel"
 #		OutputTo "LABEL"
 #		SayRest
-#		Say "|"
 
 #		json_select "trackCount"
 #		OutputTo "TOTALTRACKS"
 #		SayNextNumber
-#		Say "|"
 
 #		json_select "upc"
 #		OutputTo "UPC"
 #		SayRest
-#		Say "|"
 
 	json_unselect_object
 
