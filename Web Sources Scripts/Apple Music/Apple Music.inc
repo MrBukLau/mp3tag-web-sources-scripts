@@ -447,11 +447,11 @@ If "albums"
 					Say "|"
 
 #					OutputTo "ITUNESACCOUNT"
-#					Say "CHANGETOEMAILADDRESS"
+#					Say "CHANGETOYOUREMAILADDRESS"
 #					Say "|"
 
 #					OutputTo "ITUNESOWNER"
-#					Say "CHANGETONAME"
+#					Say "CHANGETOYOURNAME"
 #					Say "|"
 
 #					OutputTo "ITUNESPURCHASEDATE"
