@@ -64,7 +64,7 @@ There are three additional commented-out tag fields in the Apple Music web sourc
 
 ## Questions About the Web Sources Scripts
 #### Q: How do I change the purchasing country?
-A: For these web sources scripts in this repository, the default purchasing country is the United States. If you do not want the United States to be the purchasing country, you will have to change the iTunes storefront ID in the .inc file. You can find the iTunes storefront ID in the .inc file by searching for the line that has `ITUNESCOUNTRYID` in it and changing "143441" to a different iTunes storefront ID. To find the iTunes storefront IDs, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv).
+A: For these web sources scripts in this repository, the default purchasing country is the United States. If you do not want the United States to be the purchasing country, you will have to change the iTunes storefront ID in the .inc file. You can find the iTunes storefront ID in the .inc file by searching for the line that has `ITUNESCOUNTRYID` in it. After finding that line, you should look at the next line. Now, you will be able to change the purchasing country by deleting "143441" and then adding a different iTunes storefront ID. To find the iTunes storefront IDs, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv).
 
 *Purchasing Country Example (Germany):*
 <br>
