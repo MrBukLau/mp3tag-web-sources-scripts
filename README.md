@@ -64,7 +64,7 @@ There are three additional commented-out tag fields in the Apple Music web sourc
 
 ## Questions About the Web Sources Scripts
 #### Q: How do I change the purchasing country?
-A: For these web sources scripts in this repository, the default purchasing country is the United States. To change the default purchasing country, you will have to go to the .inc file and search for the line that has `ITUNESCOUNTRYID` in it. Below this line, you will see 143441, which is the iTunes storefront ID of the United States. You can change this storefront ID to the storefront ID of the country you want it to be, and you can find these storefront IDs of other countries by clicking on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv).
+A: For these web sources scripts in this repository, the default purchasing country is the United States. To change the default purchasing country, you will have to go to the .inc file and search for the line that has `ITUNESCOUNTRYID` in it. Below this line, you will see 143441, which is the iTunes storefront ID for the United States. You can change this storefront ID to the storefront ID of the country you want it to be, and you can find these storefront IDs of other countries by clicking on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv).
 
 *Purchasing Country Example (Germany):*
 <br>
@@ -75,7 +75,7 @@ Say "|"
 ```
 
 #### Q: How do I complete the XID tag field?
-A: The Apple Music web sources script only gets the International Standard Recording Code, also known as the ISRC code, for the XID tag field. Two other parts are needed to complete the XID tag field. One of those parts is the content provider, which is the company that distributes the music. To get the content provider, you will have to search for them online, but I have listed some common content providers in this [text file](https://github.com/MrBukLau/mp3tag-web-sources-scripts/raw/main/Information/iTunes%20XID.txt). The other part is just the word ISRC in lowercase letters. In total, there are three parts to the XID tag field, and they are separated from each other by colons.
+A: The Apple Music web sources script only gets the International Standard Recording Code (ISRC) for the XID tag field. Two other parts are needed to complete the XID tag field. One of those parts is the content provider, which is the company that distributes the music. To get the content provider, you will have to search for them online, but I have listed some common content providers in this [text file](https://github.com/MrBukLau/mp3tag-web-sources-scripts/raw/main/Information/iTunes%20XID.txt). The other part is just the word ISRC in lowercase letters. In total, there are three parts to the XID tag field, and they are separated from each other by colons.
 
 *XID Format:*
 <br>
