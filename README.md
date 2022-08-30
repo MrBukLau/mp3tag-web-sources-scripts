@@ -7,18 +7,22 @@
  <a href="https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-181717?style=for-the-badge&logo=github">
  </a>
- <a href="https://www.microsoft.com/en-us/windows">
-  <img src="https://img.shields.io/badge/Only%20for-Windows-0078D6?style=for-the-badge&logo=windows">
+ <a href="https://mp3tag.app/">
+  <img src="https://img.shields.io/badge/macOS-Mp3tag%20v1.6.0%20or%20above-000000?style=for-the-badge&logo=macOS">
  </a>
- <a href="https://www.mp3tag.de/en/index.html">
-  <img src="https://img.shields.io/badge/Requirement-Mp3tag%20v3.06b%20or%20above-ff9800?style=for-the-badge&logo=apple-music">
+ <a href="https://www.mp3tag.de/en/">
+  <img src="https://img.shields.io/badge/Windows-Mp3tag%20v3.06b%20or%20above-0078D6?style=for-the-badge&logo=windows">
  </a>
 </h1>
 
 ## Table of Contents
 * [Description](#description)
 * [Step-by-Step Instructions on Adding Web Sources Scripts to Mp3tag](#step-by-step-instructions-on-adding-web-sources-scripts-to-mp3tag)
+  * [macOS](#macos)
+  * [Windows](#windows)
 * [Step-by-Step Instructions on Using Web Sources Scripts in Mp3tag](#step-by-step-instructions-on-using-web-sources-scripts-in-mp3tag)
+  * [macOS](#macos-1)
+  * [Windows](#windows-1)
 * [Commented-Out Tag Fields in the Web Sources Scripts](#commented-out-tag-fields-in-the-web-sources-scripts)
 * [Questions About the Web Sources Scripts](#questions-about-the-web-sources-scripts)
   * [How do I change the purchasing country?](#q-how-do-i-change-the-purchasing-country)
@@ -34,12 +38,33 @@ This repository contains web sources scripts for Mp3tag that will allow for the 
 The web sources scripts in this repository include some modifications that were made by me. The original web sources scripts without any of these modifications can be located at a forum called [Mp3tag Community](https://community.mp3tag.de/). Special thanks to [AreDigg on Mp3tag Community](https://community.mp3tag.de/t/ws-apple-music/51184) for making the original versions of the Apple Music and iTunes Store web sources scripts.
 
 ## Step-by-Step Instructions on Adding Web Sources Scripts to Mp3tag
+### macOS
+1. Download Mp3tag from the official website ([Official Version](https://mp3tag.app/get/))
+2. Install Mp3tag on your macOS device and open it
+3. Download the web sources scripts from this repository
+4. Click on "Tag Sources" in the menu bar
+5. Click on "Open Tag Sources Folder"
+6. Drag and drop the web sources scripts into the "Sources" folder that is opened by the application
+### Windows
 1. Download Mp3tag from the official website ([Official Version](https://www.mp3tag.de/en/download.html) or [Beta Version](https://community.mp3tag.de/t/mp3tag-development-build-status/455))
-2. Install Mp3tag on your device and open it
+2. Install Mp3tag on your Windows device and open it
 3. Download the web sources scripts from this repository
 4. Move the **.inc** and **.src** files to `%appdata%\mp3tag\data\sources`
 
 ## Step-by-Step Instructions on Using Web Sources Scripts in Mp3tag
+### macOS
+1. Open Mp3tag
+2. Select the song(s) that you want to retrieve metadata for
+3. Click on "Tag Sources" in the menu bar
+4. Hover over Apple Music or iTunes Store
+5. Select the country that you want to get your metadata from
+6. Paste an Apple Music or iTunes Store URL into the text box
+7. Click on "Search"
+8. Select the correct album
+9. Click on "Next"
+10. Compare the bottom two boxes and check if your song(s) is/are in the right order/placement
+11. Click on "Merge" or "Save" to complete the process
+### Windows
 1. Open Mp3tag
 2. Select the song(s) that you want to retrieve metadata for
 3. Click on "Tag Sources" in the toolbar
@@ -109,9 +134,9 @@ A: You will have to go to the .src file and change the country code in it. To fi
 ## Additional Information
 * To find more web sources scripts for Mp3tag, click on this [link](https://community.mp3tag.de/c/development/web-sources-scripts/12)
 * To learn more about how to use web sources scripts in Mp3tag, click on this [link](https://github.com/jonaaa20/itunes-web-sources)
-* To learn more about the APIs, [click here for the Apple Music API](https://developer.apple.com/documentation/applemusicapi/) and [click here for the iTunes Store API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/)
-* To learn more about the syntax of these web sources scripts for Mp3tag, click on this [link](https://help.mp3tag.de/main_online.html)
-* To learn more about the tag fields in Mp3tag, click on this [link](https://help.mp3tag.de/main_tags.html)
+* To learn more about the APIs, [click here for the Apple Music API](https://developer.apple.com/documentation/applemusicapi/) and [click here for the iTunes Store API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html)
+* To learn more about the syntax of these web sources scripts for Mp3tag, click on this [link](https://docs.mp3tag.de/tag-sources/development/)
+* To learn more about the tag fields in Mp3tag, click on this [link](https://docs.mp3tag.de/mapping/)
 * To learn more about the XID tag field, click on this [link](https://community.mp3tag.de/t/support-for-itunesalbumadvisory-field/51715/10)
 
 ## License
