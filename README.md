@@ -37,6 +37,10 @@ This repository contains web sources scripts for Mp3tag that will allow for the 
 
 The web sources scripts in this repository include some modifications that were made by me. The original web sources scripts without any of these modifications can be located at a forum called [Mp3tag Community](https://community.mp3tag.de/). Special thanks to [AreDigg on Mp3tag Community](https://community.mp3tag.de/t/ws-apple-music/51184) for making the original versions of the Apple Music and iTunes Store web sources scripts.
 
+To check if the web sources scripts are still working, please look here:
+- Apple Music Web Sources Script: `Working`
+- iTunes Store Web Sources Script: `Working`
+
 ## Step-by-Step Instructions on Adding Web Sources Scripts to Mp3tag
 ### macOS
 1. Download Mp3tag from the official website ([Official Version](https://mp3tag.app/get/))
@@ -85,8 +89,6 @@ There are three commented-out tag fields in these web sources scripts because th
 <br>
 `ITUNESPURCHASEDATE` - Date of Purchase (Year-Month-Day Hour:Minute:Second)
 
-There are three additional commented-out tag fields in the Apple Music web sources script. They are the following: `LABEL`, `TOTALTRACKS`, and `UPC`. `TOTALTRACKS` was commented out because it does not account for when an album has multiple discs, which means that each disc would not have a different number for its `TOTALTRACKS`. The other two tag fields are just additional information that you can add to your songs if you want to add them.
-
 ## Questions About the Web Sources Scripts
 #### Q: How do I change the purchasing country?
 A: For these web sources scripts in this repository, the default purchasing country is the United States. If you do not want the United States to be the purchasing country, you will have to change the iTunes storefront ID in the .inc file. You can find the iTunes storefront ID in the .inc file by searching for the line that has `ITUNESCOUNTRYID` in it. After finding that line, you should look at the next line. Now, you will be able to change the purchasing country by deleting "143441" and then adding a different iTunes storefront ID. To find the iTunes storefront IDs, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv).
@@ -96,7 +98,6 @@ A: For these web sources scripts in this repository, the default purchasing coun
 ```
 OutputTo "ITUNESCOUNTRYID"
 Say "143443"
-Say "|"
 ```
 
 #### Q: How do I complete the XID tag field?
