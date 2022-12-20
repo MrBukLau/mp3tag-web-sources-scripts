@@ -363,11 +363,11 @@ IfNot ""
 				Say "|"
 
 #				OutputTo "ITUNESACCOUNT"
-#				Say "CHANGETOYOUREMAILADDRESS"
+#				Say "CHANGE_TO_YOUR_EMAIL_ADDRESS"
 #				Say "|"
 
 #				OutputTo "ITUNESOWNER"
-#				Say "CHANGETOYOURNAME"
+#				Say "CHANGE_TO_YOUR_NAME"
 #				Say "|"
 
 #				OutputTo "ITUNESPURCHASEDATE"
