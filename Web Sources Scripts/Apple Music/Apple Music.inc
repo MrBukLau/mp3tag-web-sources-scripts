@@ -359,18 +359,23 @@ IfNot ""
 
 				OutputTo "ITUNESGAPLESS"
 				Say "0"
+				Say "|"
 
 				OutputTo "ITUNESCOUNTRYID"
 				Say "143441"
+				Say "|"
 
 #				OutputTo "ITUNESACCOUNT"
 #				Say "CHANGETOYOUREMAILADDRESS"
+#				Say "|"
 
 #				OutputTo "ITUNESOWNER"
 #				Say "CHANGETOYOURNAME"
+#				Say "|"
 
 #				OutputTo "ITUNESPURCHASEDATE"
 #				Say "0000-00-00 00:00:00"
+#				Say "|"
 
 			json_foreach_end
 		EndIf
@@ -404,51 +409,67 @@ IfNot ""
 				json_select_array "genreNames" 1
 				If "Country"
 					Say "6"
+					Say "|"
 				EndIf
 				If "Electronic"
 					Say "7"
+					Say "|"
 				EndIf
 				If "Electronica"
 					Say "1058"
+					Say "|"
 				EndIf
 				If "Singer/Songwriter"
 					Say "10"
+					Say "|"
 				EndIf
 				If "Pop"
 					Say "14"
+					Say "|"
 				EndIf
 				If "R&B/Soul"
 					Say "15"
+					Say "|"
 				EndIf
 				If "Soundtrack"
 					Say "16"
+					Say "|"
 				EndIf
 				If "Dance"
 					Say "17"
+					Say "|"
 				EndIf
 				If "House"
 					Say "1048"
+					Say "|"
 				EndIf
 				If "Hip-Hop/Rap"
 					Say "18"
+					Say "|"
 				EndIf
 				If "Worldwide"
 					Say "19"
+					Say "|"
 				EndIf
 				If "Alternative"
 					Say "20"
+					Say "|"
 				EndIf
 				If "Rock"
 					Say "21"
+					Say "|"
 				EndIf
 				If "J-Pop"
 					Say "27"
+					Say "|"
 				EndIf
 				If "Anime"
 					Say "29"
+					Say "|"
 				EndIf
 				If "K-Pop"
 					Say "51"
+					Say "|"
 				EndIf
 
 				OutputTo "ITUNESADVISORY"
