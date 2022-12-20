@@ -219,7 +219,7 @@ IfNot ""
 										json_select "storeAdamID"
 										OutputTo "ITUNESARTISTID"
 										SayRest
-										Say "|"
+										Say "/"
 										json_unselect_object
 									EndIf
 								EndIf
@@ -312,7 +312,7 @@ IfNot ""
 										json_select "storeAdamID"
 										OutputTo "ITUNESARTISTID"
 										SayRest
-										Say "|"
+										Say "/"
 										json_unselect_object
 									EndIf
 								EndIf
