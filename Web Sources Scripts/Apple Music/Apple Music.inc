@@ -190,11 +190,10 @@ IfNot ""
 					IfNot ""
 						json_select "url"
 						IfNot ""
-							Replace "{w}" "2000"
-							Replace "{h}" "2000"
-							Replace "{f}" "jpeg"
+							RegexpReplace "(.*)\/.*" "$1"
 							OutputTo "COVERURL"
 							SayRest
+							Say "/2000x2000.jpeg"
 						EndIf
 						json_unselect_object
 					EndIf
@@ -232,6 +231,7 @@ IfNot ""
 						Set "COMPILATION"
 						OutputTo "COMPILATION"
 						Say "1"
+						Say "|"
 					EndIf
 				json_foreach_end
 
@@ -247,11 +247,7 @@ IfNot ""
 
 				OutputTo "COPYRIGHT"
 				json_select "description"
-				SayRegexp "℗.*"
-				If ""
-					json_select "description"
-					SayRegexp "©.*"
-				EndIf
+				SayRegexp ".*$"
 
 			json_foreach_end
 		EndIf
@@ -288,7 +284,7 @@ IfNot ""
 					IfNot ""
 						OutputTo "ITUNESCATALOGID"
 						json_select "storeAdamID"
-						SayRest
+						SayNextNumber
 						json_unselect_object
 					EndIf
 					json_unselect_object
@@ -355,6 +351,7 @@ IfNot ""
 				json_select "containerArtistName"
 				IfNot "Various Artists"
 					Say "0"
+					Say "|"
 				EndIf
 
 				OutputTo "ITUNESGAPLESS"
