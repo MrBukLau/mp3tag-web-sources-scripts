@@ -144,7 +144,7 @@ IfNot "0"
 
 		OutputTo "COVERURL"
 		json_select "artworkUrl100"
-		Replace "100x100bb" "2000x2000bb"
+		Replace "100x100bb" "2000x2000"
 		SayRest
 
 		OutputTo "COPYRIGHT"
@@ -155,9 +155,31 @@ IfNot "0"
 		json_select "artistName"
 		If "Various Artists"
 			Say "1"
+			Say "|"
 		Else
 			Say "0"
+			Say "|"
 		EndIf
+
+		OutputTo "ITUNESGAPLESS"
+		Say "0"
+		Say "|"
+
+		OutputTo "ITUNESCOUNTRYID"
+		Say "143441"
+		Say "|"
+
+#		OutputTo "ITUNESACCOUNT"
+#		Say "CHANGETOYOUREMAILADDRESS"
+#		Say "|"
+
+#		OutputTo "ITUNESOWNER"
+#		Say "CHANGETOYOURNAME"
+#		Say "|"
+
+#		OutputTo "ITUNESPURCHASEDATE"
+#		Say "0000-00-00 00:00:00"
+#		Say "|"
 
 	EndIf
 	json_select "kind"
@@ -293,29 +315,9 @@ IfNot "0"
 			Say "|"
 		EndIf
 
-		OutputTo "ITUNESGAPLESS"
-		Say "0"
-		Say "|"
-
 		OutputTo "ITUNESMEDIATYPE"
 		Say "Normal"
 		Say "|"
-
-		OutputTo "ITUNESCOUNTRYID"
-		Say "143441"
-		Say "|"
-
-#		OutputTo "ITUNESACCOUNT"
-#		Say "CHANGETOYOUREMAILADDRESS"
-#		Say "|"
-
-#		OutputTo "ITUNESOWNER"
-#		Say "CHANGETOYOURNAME"
-#		Say "|"
-
-#		OutputTo "ITUNESPURCHASEDATE"
-#		Say "0000-00-00 00:00:00"
-#		Say "|"
 
 	EndIf
 	json_foreach_end
