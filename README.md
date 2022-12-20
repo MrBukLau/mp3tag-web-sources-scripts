@@ -16,7 +16,9 @@
 </h1>
 
 ## Table of Contents
-* [Description](#description)
+* [Information](#information)
+  * [Description](#description)
+  * [Status](#status)
 * [Step-by-Step Instructions on Adding Web Sources Scripts to Mp3tag](#step-by-step-instructions-on-adding-web-sources-scripts-to-mp3tag)
   * [macOS](#macos)
   * [Windows](#windows)
@@ -32,12 +34,13 @@
 * [Additional Information](#additional-information)
 * [License](#license)
 
-## Description
+## Information
+### Description
 This repository contains web sources scripts for Mp3tag that will allow for the databases of Apple Music and the iTunes Store to be used to update music metadata. These web sources scripts for Mp3tag can automatically add tags to any song available on Apple Music and/or the iTunes Store. For these web sources scripts to work, the Apple Music or iTunes Store URL of a song is needed, which can be easily obtained by clicking on "Copy Link" in Apple Music or the iTunes Store.
 
 The web sources scripts in this repository include some modifications that were made by me. The original web sources scripts without any of these modifications can be located at a forum called [Mp3tag Community](https://community.mp3tag.de/). Special thanks to [AreDigg on Mp3tag Community](https://community.mp3tag.de/t/ws-apple-music/51184) for making the original versions of the Apple Music and iTunes Store web sources scripts.
 
-To check if the web sources scripts are still working, please look here:
+### Status
 - Apple Music Web Sources Script: `Working`
 - iTunes Store Web Sources Script: `Working`
 
@@ -98,6 +101,7 @@ A: For these web sources scripts in this repository, the default purchasing coun
 ```
 OutputTo "ITUNESCOUNTRYID"
 Say "143443"
+Say "|"
 ```
 
 #### Q: How do I complete the XID tag field?
