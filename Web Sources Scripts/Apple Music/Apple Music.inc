@@ -206,32 +206,14 @@ IfNot ""
 
 				json_foreach "subtitleLinks"
 					json_select_object "segue"
-					IfNot ""
-						json_select_object "destination"
-						IfNot ""
-							json_select_object "contentDescriptor"
-							IfNot ""
-								json_select "kind"
-								If "artist"
-									json_select_object "identifiers"
-									IfNot ""
-										json_select "storeAdamID"
-										OutputTo "ITUNESARTISTID"
-										SayRest
-										Say "/"
-										json_unselect_object
-									EndIf
-								EndIf
-								json_unselect_object
-							EndIf
-							json_unselect_object
-						EndIf
-						json_unselect_object
-					Else
+					If ""
 						Set "COMPILATION"
 						OutputTo "COMPILATION"
 						Say "1"
-						Say "|"
+					Else
+						Set "COMPILATION"
+						OutputTo "COMPILATION"
+						Say "0"
 					EndIf
 				json_foreach_end
 
@@ -294,34 +276,6 @@ IfNot ""
 				OutputTo "ITUNESCATALOGID"
 				Say "|"
 
-				json_foreach "subtitleLinks"
-					json_select_object "segue"
-					IfNot ""
-						json_select_object "destination"
-						IfNot ""
-							json_select_object "contentDescriptor"
-							IfNot ""
-								json_select "kind"
-								If "artist"
-									json_select_object "identifiers"
-									IfNot ""
-										json_select "storeAdamID"
-										OutputTo "ITUNESARTISTID"
-										SayRest
-										Say "/"
-										json_unselect_object
-									EndIf
-								EndIf
-								json_unselect_object
-							EndIf
-							json_unselect_object
-						EndIf
-						json_unselect_object
-					EndIf
-				json_foreach_end
-				OutputTo "ITUNESARTISTID"
-				Say "|"
-
 				OutputTo "COMPOSER"
 				json_select "composer"
 				SayRest
@@ -346,13 +300,6 @@ IfNot ""
 				json_select "containerArtistName"
 				SayRest
 				Say "|"
-
-				OutputTo "COMPILATION"
-				json_select "containerArtistName"
-				IfNot "Various Artists"
-					Say "0"
-					Say "|"
-				EndIf
 
 				OutputTo "ITUNESGAPLESS"
 				Say "0"
@@ -483,6 +430,28 @@ IfNot ""
 				Say "|"
 
 				json_unselect_object
+			EndIf
+
+			json_select_object "relationships"
+			IfNot ""
+				json_select_object "composers"
+				json_select_many "data" "id" "\\\\"
+				OutputTo "ITUNESCOMPOSERID"
+				IfNot ""
+					SayRest
+				EndIf
+				Say "|"
+				json_unselect_object
+
+				json_select_object "artists"
+				json_select_many "data" "id" "\\\\"
+				OutputTo "ITUNESARTISTID"
+				IfNot ""
+					SayRest
+				EndIf
+				Say "|"
+				json_unselect_object
+			json_unselect_object
 			EndIf
 		json_foreach_end
 
