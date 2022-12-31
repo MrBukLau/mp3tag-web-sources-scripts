@@ -1,4 +1,4 @@
 # Apple Music - United States
-[IndexUrl]=https://itunes.apple.com/search?media=music&entity=album&limit=200&country=us&lang=en_us
+[IndexUrl]=https://music.apple.com/us/search?l=en&term=%s
 [SearchBy]=URL||||&term=%s
 [Include]=Apple Music.inc
