@@ -121,12 +121,12 @@ SonyBMG:isrc:USSM19922509
 A: Some of the most common genre IDs are already accounted for in these web sources scripts. However, if there is a genre ID that is not listed in web sources scripts, you can add that genre ID in the .inc file by searching for the line that says `ITUNESGENREID` and following the same format as the other genre IDs. To find more genre IDs, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Genre%20IDs.csv). If you are using the link that I provided in the previous sentence, you should make sure that you are looking at [category #34](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Genre%20IDs.csv#L37) because this category is the one that contains the genre IDs for music.
 
 #### Q: How do I get music metadata from a country of Apple Music or iTunes Store that is not available in this repository?
-A: You will have to go to the .src file and change the country code in it. To find the country codes, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) or this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes.md).
+A: You will have to go to the .src file and change the country code in it. To find the country codes, you can click on this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes%20and%20Storefront%20IDs.csv) or this [link](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/Information/iTunes%20Country%20Codes.md). Also, you are able to change the language of the music metadata by changing the language parameter (`l` for Apple Music and `lang` for iTunes Store) in that same place.
 
 *Country Code Example for Apple Music Script (Germany):*
 <br>
 ```
-[IndexUrl]=https://itunes.apple.com/search?media=music&entity=album&limit=200&country=de&lang=en_us
+[IndexUrl]=https://music.apple.com/de/search?l=en&term=%s
 ```
 
 *Country Code Example for iTunes Store Script (Germany):*
