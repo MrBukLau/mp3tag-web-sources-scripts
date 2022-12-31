@@ -1,4 +1,4 @@
 # Apple Music - Japan
-[IndexUrl]=https://itunes.apple.com/search?media=music&entity=album&limit=200&country=jp&lang=en_us
+[IndexUrl]=https://music.apple.com/jp/search?l=en&term=%s
 [SearchBy]=URL||||&term=%s
 [Include]=Apple Music.inc
