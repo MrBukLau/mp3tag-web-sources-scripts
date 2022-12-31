@@ -428,12 +428,12 @@ json_select_object "data"
 					Set "TEMP_ARTIST"
 					OutputTo "ARTIST"
 					Say "|"
-				EndIF
+				EndIf
 				IfOutput "TEMP_ITUNESARTISTID"
 					Set "TEMP_ITUNESARTISTID"
 					OutputTo "ITUNESARTISTID"
 					Say "|"
-				EndIF
+				EndIf
 
 				OutputTo "COVERURL"
 				json_select_object "artwork"
