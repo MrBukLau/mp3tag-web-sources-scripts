@@ -161,26 +161,6 @@ IfNot "0"
 			Say "|"
 		EndIf
 
-		OutputTo "ITUNESGAPLESS"
-		Say "0"
-		Say "|"
-
-		OutputTo "ITUNESCOUNTRYID"
-		Say "143441"
-		Say "|"
-
-#		OutputTo "ITUNESACCOUNT"
-#		Say "CHANGE_TO_YOUR_EMAIL_ADDRESS"
-#		Say "|"
-
-#		OutputTo "ITUNESOWNER"
-#		Say "CHANGE_TO_YOUR_NAME"
-#		Say "|"
-
-#		OutputTo "ITUNESPURCHASEDATE"
-#		Say "0000-00-00 00:00:00"
-#		Say "|"
-
 	EndIf
 	json_select "kind"
 	If "song"
@@ -321,4 +301,26 @@ IfNot "0"
 
 	EndIf
 	json_foreach_end
+
+	# Extra iTunes Store Tags
+	OutputTo "ITUNESGAPLESS"
+	Say "0"
+	Say "|"
+
+	OutputTo "ITUNESCOUNTRYID"
+	Say "143441"
+	Say "|"
+
+#	OutputTo "ITUNESACCOUNT"
+#	Say "CHANGE_TO_YOUR_EMAIL_ADDRESS"
+#	Say "|"
+
+#	OutputTo "ITUNESOWNER"
+#	Say "CHANGE_TO_YOUR_NAME"
+#	Say "|"
+
+#	OutputTo "ITUNESPURCHASEDATE"
+#	Say "0000-00-00 00:00:00"
+#	Say "|"
+
 EndIf
