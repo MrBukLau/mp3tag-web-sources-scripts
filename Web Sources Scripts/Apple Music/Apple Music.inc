@@ -115,7 +115,7 @@ IfNotOutput "FoundWebURL"
 										json_select "url"
 										RegexpReplace "(.*)\/.*" "$1"
 										SayRest
-										Say "/120x120-50.jpg"
+										Say "/120x120-50.jpeg"
 									json_unselect_object
 								json_unselect_object
 							EndIf
@@ -159,7 +159,7 @@ IfNotOutput "FoundWebURL"
 										json_select "url"
 										RegexpReplace "(.*)\/.*" "$1"
 										SayRest
-										Say "/120x120-50.jpg"
+										Say "/120x120-50.jpeg"
 									json_unselect_object
 								json_unselect_object
 							EndIf
@@ -202,7 +202,7 @@ IfNotOutput "FoundWebURL"
 										json_select "url"
 										RegexpReplace "(.*)\/.*" "$1"
 										SayRest
-										Say "/120x120-50.jpg"
+										Say "/120x120-50.jpeg"
 									json_unselect_object
 								json_unselect_object
 							EndIf
