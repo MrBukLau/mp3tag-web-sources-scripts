@@ -461,7 +461,8 @@ json_select_object "data"
 					OutputTo "COPYRIGHT"
 					json_select "description"
 					IfNot ""
-						SayRegexp ".*$"
+						RegexpReplace "(?:.*?\\n){2}" ""
+						SayRest
 					EndIf
 
 				EndIf
