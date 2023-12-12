@@ -4,9 +4,6 @@
  Mp3tag Web Sources Scripts
  <br>
  <br>
- <a href="https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/License-MIT-181717?style=for-the-badge&logo=github">
- </a>
  <a href="https://mp3tag.app/">
   <img src="https://img.shields.io/badge/macOS-Mp3tag%20v1.6.0%20or%20above-000000?style=for-the-badge&logo=macOS">
  </a>
@@ -145,4 +142,4 @@ A: You will have to go to the .src file and change the country code in it. To fi
 * To learn more about the XID tag field, click on this [link](https://community.mp3tag.de/t/support-for-itunesalbumadvisory-field/51715/10)
 
 ## License
-[MIT](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE)
+[The Unlicense](https://github.com/MrBukLau/mp3tag-web-sources-scripts/blob/main/LICENSE.md)
