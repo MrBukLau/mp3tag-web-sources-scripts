@@ -1,15 +1,16 @@
 <h1 align="center">
  <img src="https://mp3tag.app/assets/images/mp3tag-logo.png" width="256" height="256">
- <br>
- Mp3tag Web Sources Scripts
- <br>
- <br>
- <a href="https://mp3tag.app/">
-  <img src="https://img.shields.io/badge/macOS-Mp3tag%20v1.6.0%20or%20above-000000?style=for-the-badge&logo=macOS">
- </a>
- <a href="https://www.mp3tag.de/en/">
-  <img src="https://img.shields.io/badge/Windows-Mp3tag%20v3.06b%20or%20above-0078D6?style=for-the-badge&logo=windows">
- </a>
+ <p>
+  Mp3tag Web Sources Scripts
+ </p>
+ <p>
+  <a href="https://mp3tag.app/">
+   <img src="https://img.shields.io/badge/macOS-Mp3tag%20v1.6.0%20or%20above-000000?style=for-the-badge&logo=macOS">
+  </a>
+  <a href="https://www.mp3tag.de/en/">
+   <img src="https://img.shields.io/badge/Windows-Mp3tag%20v3.06b%20or%20above-0078D6?style=for-the-badge&logo=windows">
+  </a>
+ </p>
 </h1>
 
 ## Table of Contents
